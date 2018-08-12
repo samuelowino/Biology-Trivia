@@ -98,20 +98,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.home_menu:
-                startActivity(new Intent(MainActivity.this, MainActivity.class));
-                break;
-//            case R.id.settings_menu:
-////                startActivity(new Intent(MainActivity.this, SettingsActivity.class));
-//                break;
-//            case R.id.help_and_feedback_menu_item:
-////                startActivity(new Intent(MainActivity.this, HelpAndFeedbackActivity.class));
-//                break;.
-            case R.id.biography_menu:
-//                startActivity(new Intent(MainActivity.this, BiographyActivity.class));
-                break;
-            default:
-                break;
+
         }
         return super.onOptionsItemSelected(item);
     }
@@ -132,36 +119,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
         switch (item.getItemId()) {
-            case R.id.home_menu:
-                Intent intent = new Intent(this, MainActivity.class);
-                startActivity(intent);
-                break;
 
-            case R.id.albums_menu:
-//                startActivity(new Intent(MainActivity.this, BiographyActivity.class));
-                break;
-
-            case R.id.invite_freinds_menu:
-                Intent sendIntent = new Intent();
-                sendIntent.setAction(Intent.ACTION_SEND);
-                sendIntent.putExtra(Intent.EXTRA_TEXT, getString(R.string.share_body_text));
-                sendIntent.setType(getString(R.string.text_plain_intent_type));
-                startActivity(Intent.createChooser(sendIntent, getString(R.string.share_body_text)));
-                break;
-            case R.id.biography_menu:
-//                startActivity(new Intent(MainActivity.this, BiographyActivity.class));
-                break;
-//            case R.id.about_menu:
-////                Intent aboutIntent = new Intent(this, AboutActivity.class);
-////                startActivity(aboutIntent);
-//                break;
-//            case R.id.help_and_feedback_menu_item:
-////                startActivity(new Intent(this, HelpAndFeedbackActivity.class));
-//                break;
-//            case R.id.donate_menu:
-            //open GoGetFunding
-//                openFundingPage();
-//                break;
         }
 
         return true;

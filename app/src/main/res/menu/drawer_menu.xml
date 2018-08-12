@@ -2,62 +2,42 @@
 <menu
     xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/home_menu"
+        android:id="@+id/todays_tasks_menu"
         android:checkable="true"
         android:checked="true"
         android:icon="@drawable/ic_action_tem"
-        android:title="Home" />
+        android:title="@string/general_today_s_tasks" />
 
     <item
-        android:id="@+id/albums_menu"
+        android:id="@+id/profile_menu"
         android:checkable="true"
-        android:icon="@drawable/ic_action_tem"
-        android:title="Albums">
+        android:icon="@drawable/ic_action_profile"
+        android:title="@string/general_profile">
 
     </item>
 
     <item
-        android:id="@+id/biography_menu"
+        android:id="@+id/achievements_menu"
         android:checkable="true"
         android:icon="@drawable/ic_action_tem"
-        android:title="Biography" />
+        android:title="@string/general_achievements" />
 
     <item
-        android:id="@+id/invite_freinds_menu"
+        android:id="@+id/learn_menu"
         android:checkable="true"
-        android:icon="@drawable/ic_action_tem"
-        android:title="Invite friends" />
+        android:icon="@drawable/ic_action_learn"
+        android:title="@string/general_learn" />
 
-    <!--<item-->
-    <!--android:title="">-->
+    <item
+        android:id="@+id/settins_menu"
+        android:checkable="true"
+        android:icon="@drawable/ic_action_settings"
+        android:title="@string/general_settings" />
 
-    <!--<menu>-->
-    <!--<item-->
-    <!--android:id="@+id/settings_menu"-->
-    <!--android:checkable="true"-->
-    <!--android:icon="@drawable/ic_action_home_menu"-->
-    <!--android:title="Settings" />-->
-    <!--<item-->
-    <!--android:id="@+id/about_menu"-->
-    <!--android:checkable="true"-->
-    <!--android:icon="@drawable/ic_action_home_menu"-->
-    <!--android:title="About" />-->
-
-    <!--<item-->
-    <!--android:id="@+id/help_and_feedback_menu_item"-->
-    <!--android:checkable="true"-->
-    <!--android:icon="@drawable/ic_action_home_menu"-->
-    <!--android:title="Feedback" />-->
-
-    <!--<item-->
-    <!--android:id="@+id/donate_menu"-->
-    <!--android:checkable="true"-->
-    <!--android:icon="@drawable/ic_action_home_menu"-->
-    <!--android:title="Donate" />-->
-
-    <!--</menu>-->
-
-    <!--</item>-->
-
+    <item
+        android:id="@+id/help_feedback_menu"
+        android:checkable="true"
+        android:icon="@drawable/ic_action_help"
+        android:title="@string/general_help_and_feedback" />
 
 </menu>

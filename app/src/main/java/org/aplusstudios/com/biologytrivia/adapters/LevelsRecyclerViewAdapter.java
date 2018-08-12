@@ -33,49 +33,8 @@ public class LevelsRecyclerViewAdapter extends RecyclerView.Adapter<LevelsRecycl
 
     @Override
     public void onBindViewHolder(@NonNull final LessonViewHolder lessonsViewHolder, final int position) {
-        lessonsViewHolder.cardTitleView.setText(levelList.get(position).getSongTitle());
-        lessonsViewHolder.cardDescription.setText(levelList.get(position).getSongDescription());
-
-        lessonsViewHolder.cardView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (levelList.get(lessonsViewHolder.getAdapterPosition()).getSongTitle().equals(view.getContext().getString(R.string.track_one_title))) {
-                    Intent intent = new Intent(view.getContext(),TrackOneActivity.class);
-                    view.getContext().startActivity(intent);
-                } else if (levelList.get(lessonsViewHolder.getAdapterPosition()).getSongTitle().equals(view.getContext().getString(R.string.track_two_title))) {
-                    Intent intent = new Intent(view.getContext(),TrackTwoActivity.class);
-                    view.getContext().startActivity(intent);
-                } else if (levelList.get(lessonsViewHolder.getAdapterPosition()).getSongTitle().equals(view.getContext().getString(R.string.track_three_title))) {
-                    Intent intent = new Intent(view.getContext(),TrackThreeActivity.class);
-                    view.getContext().startActivity(intent);
-                } else if (levelList.get(lessonsViewHolder.getAdapterPosition()).getSongTitle().equals(view.getContext().getString(R.string.track_four_title))) {
-                    Intent intent = new Intent(view.getContext(),TrackFourActivity.class);
-                    view.getContext().startActivity(intent);
-                } else if (levelList.get(lessonsViewHolder.getAdapterPosition()).getSongTitle().equals(view.getContext().getString(R.string.track_five_title))) {
-                    Intent intent = new Intent(view.getContext(),TrackFiveActivity.class);
-                    view.getContext().startActivity(intent);
-                }  else if (levelList.get(lessonsViewHolder.getAdapterPosition()).getSongTitle().equals(view.getContext().getString(R.string.track_six_title))) {
-                    Intent intent = new Intent(view.getContext(),TrackSixActivity.class);
-                    view.getContext().startActivity(intent);
-                } else if (levelList.get(lessonsViewHolder.getAdapterPosition()).getSongTitle().equals(view.getContext().getString(R.string.track_seven_title))) {
-                    Intent intent = new Intent(view.getContext(),TrackSevenActivity.class);
-                    view.getContext().startActivity(intent);
-                } else if (levelList.get(lessonsViewHolder.getAdapterPosition()).getSongTitle().equals(view.getContext().getString(R.string.track_eight_title))) {
-                    Intent intent = new Intent(view.getContext(),TrackEightActivity.class);
-                    view.getContext().startActivity(intent);
-                } else if (levelList.get(lessonsViewHolder.getAdapterPosition()).getSongTitle().equals(view.getContext().getString(R.string.track_nine_title))) {
-                    Intent intent = new Intent(view.getContext(),TrackNineActivity.class);
-                    view.getContext().startActivity(intent);
-                } else if (levelList.get(lessonsViewHolder.getAdapterPosition()).getSongTitle().equals(view.getContext().getString(R.string.track_ten_title))) {
-                    Intent intent = new Intent(view.getContext(),TrackTenActivity.class);
-                    view.getContext().startActivity(intent);
-                } else if (levelList.get(lessonsViewHolder.getAdapterPosition()).getSongTitle().equals(view.getContext().getString(R.string.track_eleven_title))) {
-                    Intent intent = new Intent(view.getContext(),TrackElevenActivity.class);
-                    view.getContext().startActivity(intent);
-                }
-            }
-        });
-
+        lessonsViewHolder.cardTitleView.setText(levelList.get(position).getLevelTitle());
+        lessonsViewHolder.cardDescription.setText(levelList.get(position).getLevelTitle());
     }
 
     @Override
