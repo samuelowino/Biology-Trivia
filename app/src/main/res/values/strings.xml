@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Biology Trivia</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="share_body_text">share</string>
+    <string name="text_plain_intent_type">share</string>
+</resources>

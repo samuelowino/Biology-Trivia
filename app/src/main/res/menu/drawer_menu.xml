@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_menu"
+        android:checkable="true"
+        android:checked="true"
+        android:icon="@drawable/ic_action_tem"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/albums_menu"
+        android:checkable="true"
+        android:icon="@drawable/ic_action_tem"
+        android:title="Albums">
+
+    </item>
+
+    <item
+        android:id="@+id/biography_menu"
+        android:checkable="true"
+        android:icon="@drawable/ic_action_tem"
+        android:title="Biography" />
+
+    <item
+        android:id="@+id/invite_freinds_menu"
+        android:checkable="true"
+        android:icon="@drawable/ic_action_tem"
+        android:title="Invite friends" />
+
+    <!--<item-->
+    <!--android:title="">-->
+
+    <!--<menu>-->
+    <!--<item-->
+    <!--android:id="@+id/settings_menu"-->
+    <!--android:checkable="true"-->
+    <!--android:icon="@drawable/ic_action_home_menu"-->
+    <!--android:title="Settings" />-->
+    <!--<item-->
+    <!--android:id="@+id/about_menu"-->
+    <!--android:checkable="true"-->
+    <!--android:icon="@drawable/ic_action_home_menu"-->
+    <!--android:title="About" />-->
+
+    <!--<item-->
+    <!--android:id="@+id/help_and_feedback_menu_item"-->
+    <!--android:checkable="true"-->
+    <!--android:icon="@drawable/ic_action_home_menu"-->
+    <!--android:title="Feedback" />-->
+
+    <!--<item-->
+    <!--android:id="@+id/donate_menu"-->
+    <!--android:checkable="true"-->
+    <!--android:icon="@drawable/ic_action_home_menu"-->
+    <!--android:title="Donate" />-->
+
+    <!--</menu>-->
+
+    <!--</item>-->
+
+
+</menu>

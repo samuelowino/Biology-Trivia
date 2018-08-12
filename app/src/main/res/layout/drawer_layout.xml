@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="180dip"
+    android:background="@drawable/biography"
+    android:clickable="true"
+    android:focusable="true">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/circleImageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp" android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@mipmap/ic_launcher_round"
+        app:border_color="@color/colorAccent"
+        app:border_width="0dp"
+        app:paddingStart="6dp" />
+
+    <TextView
+        android:id="@+id/drawer_menu_username_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/circleImageView"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="39dp"
+        android:text="@string/app_name"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A Plus Apps"
+        android:layout_above="@+id/drawer_menu_username_textView"
+        android:layout_alignStart="@+id/drawer_menu_username_textView"
+        android:textColor="@android:color/white" />
+
+
+</RelativeLayout>
