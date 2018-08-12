@@ -10,4 +10,5 @@
     <string name="general_learn">Learn</string>
     <string name="general_settings">Settings</string>
     <string name="general_help_and_feedback"><![CDATA[Help & Feedback]]></string>
+    <string name="general_question_thumbnail">Question Thumbnail</string>
 </resources>

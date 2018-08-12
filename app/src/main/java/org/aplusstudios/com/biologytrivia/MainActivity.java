@@ -119,7 +119,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
 
         switch (item.getItemId()) {
-
+            case R.id.profile_menu:
+                startActivity(new Intent(MainActivity.this, QuestionActivity.class));
+                break;
         }
 
         return true;
