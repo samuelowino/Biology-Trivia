@@ -4,6 +4,9 @@
     <string name="close">close</string>
     <string name="share_body_text">share</string>
     <string name="text_plain_intent_type">share</string>
+
+    <!-- ============================================================================================================================ -->
+
     <string name="general_today_s_tasks">Today\'s Tasks</string>
     <string name="general_profile">Profile</string>
     <string name="general_achievements">Achievements</string>
@@ -13,30 +16,183 @@
     <string name="general_question_thumbnail">Question Thumbnail</string>
     <string name="general_unlock">unlock</string>
 
+    <!-- ============================================================================================================================ -->
+
     <!-- sample text -->
     <string name="level1">Introduction</string>
     <string name="level2">Cell Biology</string>
+
+    <!-- ============================================================================================================================ -->
+
+    <!-- General text -->
     <string name="general_get_free_coins">click to get free coins</string>
     <string name="general_your_remaing_coins">Your remaining coins</string>
     <string name="general_your_available_keys">Your available keys</string>
     <string name="general_unlock_question">unlock_question</string>
     <string name="general_level_lable">level lable</string>
     <string name="general_level_unlock_status">level unlock status</string>
-    <string name="sample_progress_title">Progress 20% | Master</string>
     <string name="general_get_free_coins_text">Get FREE coins</string>
-    <string name="sample_number_of_coins">5,000 coins</string>
-    <string name="sample_number_of_keys">50 Keys</string>
     <string name="promo_text">Promo</string>
     <string name="general_company_name">A Plus Apps</string>
     <string name="general_home">Home</string>
-    <string name="sample_question_number">5/10</string>
-    <string name="sample_timer_display">00:00</string>
-    <string name="sample_question">Which country is this landmark located in ?</string>
-    <string name="sample_level_title">Level 1</string>
     <string name="general_question">question</string>
     <string name="general_error_unable_to_load_question">Unable to load question as this time.</string>
+
+    <!-- ============================================================================================================================ -->
+
+    <!-- Sample text -->
+    <string name="sample_progress_title">Progress 20% | Master</string>
     <string name="sample_answer_a">Choose this answer</string>
     <string name="sample_answer_b">OR choose this answer</string>
     <string name="sample_answer_c">OR this answer</string>
     <string name="sample_answer_d">OR all these answers</string>
+    <string name="sample_question_number">5/10</string>
+    <string name="sample_timer_display">00:00</string>
+    <string name="sample_question">Which country is this landmark located in ?</string>
+    <string name="sample_level_title">Level 1</string>
+    <string name="sample_number_of_coins">5,000 coins</string>
+    <string name="sample_number_of_keys">50 Keys</string>
+
+    <string name="level_one_questions_number">3</string>
+    <string name="level_two_questions_number">10</string>
+    <string name="level_three_questions_number">5</string>
+    <string name="level_four_questions_number">13</string>
+    <string name="level_five_questions_number">7</string>
+    <string name="level_six_questions_number">8</string>
+    <string name="level_seven_questions_number">2</string>
+    <string name="level_eight_questions_number">11</string>
+    <string name="level_nine_questions_number">5</string>
+    <string name="level_ten_questions_number">7</string>
+
+
+
+    <!-- ============================================================================================================================ -->
+
+    <!--LEVEL TITLES -->
+
+    <!-- Level 1 QUESTIONS (3)-->
+
+
+    <string name="level_one_question_one">Which of the following is true?</string>
+    <string name="level_one_question_two">Select the correct statement</string>
+    <string name="level_one_question_three">What is the study of cells?</string>
+    <string name="level_one_question_four">What is Biology?</string>
+    <string name="level_one_question_five">Which of the following defines Amoeba?</string>
+
+
+    <!-- Level 1 OPTIONS -->
+
+
+    <string name="level_one_question_one_option_one">Biology is the study of chemicals.</string>
+    <string name="level_one_question_one_option_two">Biology is the study of human beings.</string>
+    <string name="level_one_question_one_option_three">Biology is the study of life.</string>
+    <string name="level_one_question_one_option_four">Biology is the study of plants.</string>
+
+    <string name="level_one_question_two_option_one">Cytology is the study if cells</string>
+    <string name="level_one_question_two_option_two">Red blood cells supplies oxygen to the body</string>
+    <string name="level_one_question_two_option_three">White blood cells prevent diseases</string>
+    <string name="level_one_question_two_option_four">Plasm is the content found in red blood cells</string>
+
+    <string name="level_one_question_three_option_one">Biology is the study of chemicals.</string>
+    <string name="level_one_question_three_option_two">Biology is the study of human beings.</string>
+    <string name="level_one_question_three_option_three">Biology is the study of life.</string>
+    <string name="level_one_question_three_option_four">Biology is the study of plants.</string>
+
+
+    <!-- Level 1 CORRECT ANSWERS BY QUESTION-->
+    <string name="level_one_question_one_answer">C</string>
+    <string name="level_one_question_two_answer">A</string>
+    <string name="level_one_question_three_answer">C</string>
+
+    <!-- ============================================================================================================================ -->
+
+    <!-- Level 2 QUESTIONS -->
+    <string name="level_two_question_one">Which is cytology?</string>
+
+
+    <!-- Level 2 OPTIONS -->
+
+    <!-- Level 2 CORRECT ANSWERS -->
+
+    <!-- ============================================================================================================================ -->
+
+
+    <!-- Level 3 QUESTIONS -->
+    <string name="level_three_question_one">What composes 70% of water?</string>
+
+    <!-- Level 3 OPTIONS -->
+
+    <!-- Level 3 CORRECT ANSWERS -->
+
+    <!-- ============================================================================================================================ -->
+
+    <!-- Level 4 QUESTIONS -->
+    <string name="level_four_question_one">Where is the Kanyn?</string>
+
+    <!-- Level 4 OPTIONS -->
+
+    <!-- Level 4 CORRECT ANSWERS -->
+
+    <!-- ============================================================================================================================ -->
+
+    <!-- Level 5 QUESTIONS -->
+    <string name="level_five_question_one">Define Criptology?</string>
+
+    <!-- Level 5 OPTIONS -->
+
+    <!-- Level 5 CORRECT ANSWERS -->
+
+    <!-- ============================================================================================================================ -->
+
+    <!-- Level 6 QUESTIONS -->
+    <string name="level_six_question_one">Which of the following is true?</string>
+
+    <!-- Level 6 OPTIONS -->
+
+    <!-- Level 6 CORRECT ANSWERS -->
+
+    <!-- ============================================================================================================================ -->
+
+    <!-- Level 7 QUESTIONS -->
+    <string name="level_seven_question_one">Which of the following is true?</string>
+
+    <!-- Level 7 OPTIONS -->
+
+    <!-- Level 7 CORRECT ANSWERS -->
+
+    <!-- ============================================================================================================================ -->
+
+
+    <!-- Level 8 QUESTIONS -->
+    <string name="level_eight_question_one">Which of the following is true?</string>
+
+    <!-- Level 8 OPTIONS -->
+
+    <!-- Level 8 CORRECT ANSWERS -->
+
+    <!-- ============================================================================================================================ -->
+
+
+    <!-- Level 9 QUESTIONS -->
+    <string name="level_nine_question_one">Which of the following is true?</string>
+
+    <!-- Level 9 OPTIONS -->
+
+    <!-- Level 9 CORRECT ANSWERS -->
+
+    <!-- ============================================================================================================================ -->
+
+
+    <!-- Level 10 QUESTIONS -->
+    <string name="level_ten_question_one">Which of the following is true?</string>
+
+    <!-- Level 10 OPTIONS -->
+
+    <!-- Level 10 CORRECT ANSWERS -->
+
+    <!-- ============================================================================================================================ -->
+
+
+
+
 </resources>

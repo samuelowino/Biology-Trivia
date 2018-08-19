@@ -7,8 +7,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.provider.BaseColumns;
 
-import org.aplusstudios.com.biologytrivia.database.levelsdb.LevelsSQLDatabaseContract;
-import org.aplusstudios.com.biologytrivia.model.Level;
+import org.aplusstudios.com.biologytrivia.database.coinsdb.CoinsSQLDatabaseContract;
+import org.aplusstudios.com.biologytrivia.model.Coin;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,12 +24,12 @@ public class CoinsSQLDatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL(LevelsSQLDatabaseContract.SQL_CREATE_ENTRIES);
+        db.execSQL(CoinsSQLDatabaseContract.SQL_CREATE_ENTRIES);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL(LevelsSQLDatabaseContract.SQL_DELETE_ENTRIES);
+        db.execSQL(CoinsSQLDatabaseContract.SQL_DELETE_ENTRIES);
         onCreate(db);
     }
 
@@ -38,34 +38,32 @@ public class CoinsSQLDatabaseHelper extends SQLiteOpenHelper {
         super.onDowngrade(db, oldVersion, newVersion);
     }
 
-    public void saveLevelsStatus(String title,Boolean isStarted,String levelNumber,Boolean isCompleted){
+    public void saveLevelsStatus(Integer number,Integer balance,Integer spent){
         SQLiteDatabase db = getWritableDatabase();
         ContentValues contentValues = new ContentValues();
-        contentValues.put(LevelsSQLDatabaseContract.LevelsEntry.COLUMN_LEVEL_TITLE,title);
-        contentValues.put(LevelsSQLDatabaseContract.LevelsEntry.COLUMN_LEVEL_STARTED,isStarted.toString());
-        contentValues.put(LevelsSQLDatabaseContract.LevelsEntry.COLUMN_LEVEL_NUMBER,levelNumber);
-        contentValues.put(LevelsSQLDatabaseContract.LevelsEntry.COLUMN_LEVEL_COMPLETED,isCompleted.toString());
-        long newRowId = db.insert(LevelsSQLDatabaseContract.LevelsEntry.TABLE_NAME,null,contentValues);
+        contentValues.put(CoinsSQLDatabaseContract.CoinsEntry.COLUMN_TOTAL_NUMBER,number);
+        contentValues.put(CoinsSQLDatabaseContract.CoinsEntry.COLUMN_COINS_BALANCE,balance);
+        contentValues.put(CoinsSQLDatabaseContract.CoinsEntry.COLUMN_SPENT_COINS,spent);
+        long newRowId = db.insert(CoinsSQLDatabaseContract.CoinsEntry.TABLE_NAME,null,contentValues);
 
     }
 
-    public List<Level> getSavedLevels(){
+    public List<Coin> getSavedLevels(){
 
         SQLiteDatabase db = getReadableDatabase();
         String [] projection = {
                 BaseColumns._ID,
-                LevelsSQLDatabaseContract.LevelsEntry.COLUMN_LEVEL_TITLE,
-                LevelsSQLDatabaseContract.LevelsEntry.COLUMN_LEVEL_STARTED,
-                LevelsSQLDatabaseContract.LevelsEntry.COLUMN_LEVEL_NUMBER,
-                LevelsSQLDatabaseContract.LevelsEntry.COLUMN_LEVEL_COMPLETED
+                CoinsSQLDatabaseContract.CoinsEntry.COLUMN_COINS_BALANCE,
+                CoinsSQLDatabaseContract.CoinsEntry.COLUMN_SPENT_COINS,
+                CoinsSQLDatabaseContract.CoinsEntry.COLUMN_TOTAL_NUMBER
         };
 
         String selection = BaseColumns._ID + " > ?";
         String[] selectionArgs = {"-1"};
-        String sortOrder = LevelsSQLDatabaseContract.LevelsEntry.COLUMN_LEVEL_TITLE + " DESC";
+        String sortOrder = CoinsSQLDatabaseContract.CoinsEntry.COLUMN_TOTAL_NUMBER + " DESC";
 
         Cursor cursor  = db.query(
-                LevelsSQLDatabaseContract.LevelsEntry.TABLE_NAME,
+                CoinsSQLDatabaseContract.CoinsEntry.TABLE_NAME,
                 projection,
                 selection,
                 selectionArgs,
@@ -74,51 +72,32 @@ public class CoinsSQLDatabaseHelper extends SQLiteOpenHelper {
                 sortOrder
         );
 
-        List<Level> notesEntryList = new ArrayList<>();
+        List<Coin> coinList = new ArrayList<>();
 
         while(cursor.moveToNext()){
-            String title = cursor.getString(cursor.getColumnIndexOrThrow(LevelsSQLDatabaseContract.LevelsEntry.COLUMN_LEVEL_TITLE));
-            Integer number = cursor.getInt(cursor.getColumnIndexOrThrow(LevelsSQLDatabaseContract.LevelsEntry.COLUMN_LEVEL_NUMBER));
-            Integer started = cursor.getInt(cursor.getColumnIndexOrThrow(LevelsSQLDatabaseContract.LevelsEntry.COLUMN_LEVEL_STARTED));
-            Integer complete = cursor.getInt(cursor.getColumnIndexOrThrow(LevelsSQLDatabaseContract.LevelsEntry.COLUMN_LEVEL_COMPLETED));
+            Integer number = cursor.getInt(cursor.getColumnIndexOrThrow(CoinsSQLDatabaseContract.CoinsEntry.COLUMN_TOTAL_NUMBER));
+            Integer spent = cursor.getInt(cursor.getColumnIndexOrThrow(CoinsSQLDatabaseContract.CoinsEntry.COLUMN_SPENT_COINS));
+            Integer balance = cursor.getInt(cursor.getColumnIndexOrThrow(CoinsSQLDatabaseContract.CoinsEntry.COLUMN_COINS_BALANCE));
 
-            Boolean isStarted = false;
-            Boolean isCompleted = false;
-
-            if (started == 1)
-                isStarted = true;
-
-            if (complete == 1)
-                isCompleted = true;
-
-            Level notesEntry = new Level(number,isStarted,isCompleted,title);
-            notesEntryList.add(notesEntry);
+            Coin coin = new Coin(number,spent,balance);
+            coinList.add(coin);
         }
 
         cursor.close();
-        return notesEntryList;
+        return coinList;
     }
 
     // WHERE "+ NotesDatabaseContract.NotesEntry.COLUMN_NAME_TITLE + " = '"+oldTitle+"'");
-    public void updateLevelsStatus(int number, boolean isStarted, boolean isCompleted, String levelTitle) {
-
-        int completed = 0;
-        int started = 0;
-
-        if (isCompleted)
-            completed = 1;
-
-        if (isStarted)
-            started = 1;
+    public void updateLevelsStatus(Integer number,Integer balance,Integer spent) {
 
         ContentValues contentValues = new ContentValues();
-        contentValues.put(LevelsSQLDatabaseContract.LevelsEntry.COLUMN_LEVEL_COMPLETED,started);
-        contentValues.put(LevelsSQLDatabaseContract.LevelsEntry.COLUMN_LEVEL_STARTED,completed);
-
+        contentValues.put(CoinsSQLDatabaseContract.CoinsEntry.COLUMN_TOTAL_NUMBER,number);
+        contentValues.put(CoinsSQLDatabaseContract.CoinsEntry.COLUMN_COINS_BALANCE,balance);
+        contentValues.put(CoinsSQLDatabaseContract.CoinsEntry.COLUMN_COINS_BALANCE,spent);
 
         SQLiteDatabase db = getWritableDatabase();
-        db.update(LevelsSQLDatabaseContract.LevelsEntry.TABLE_NAME,contentValues,
-                LevelsSQLDatabaseContract.LevelsEntry.COLUMN_LEVEL_NUMBER+" = '"+number+"'",null);
+        db.update(CoinsSQLDatabaseContract.CoinsEntry.TABLE_NAME,contentValues,
+                CoinsSQLDatabaseContract.CoinsEntry.COLUMN_TOTAL_NUMBER+" = '"+number+"'",null);
     }
 }
 

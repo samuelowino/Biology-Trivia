@@ -10,15 +10,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import org.aplusstudios.com.biologytrivia.MainActivity;
 import org.aplusstudios.com.biologytrivia.QuestionActivity;
 import org.aplusstudios.com.biologytrivia.R;
-import org.aplusstudios.com.biologytrivia.model.Answer;
 import org.aplusstudios.com.biologytrivia.model.Level;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class LevelsRecyclerViewAdapter extends RecyclerView.Adapter<LevelsRecyclerViewAdapter.LessonViewHolder> {
@@ -26,7 +22,7 @@ public class LevelsRecyclerViewAdapter extends RecyclerView.Adapter<LevelsRecycl
     private final List<Level> levelList;
     private final Context context;
 
-    public LevelsRecyclerViewAdapter(List<Level> lessonList,Context context) {
+    public LevelsRecyclerViewAdapter(List<Level> lessonList, Context context) {
         this.levelList = lessonList;
         this.context = context;
     }
@@ -43,17 +39,17 @@ public class LevelsRecyclerViewAdapter extends RecyclerView.Adapter<LevelsRecycl
     @Override
     public void onBindViewHolder(@NonNull final LessonViewHolder lessonsViewHolder, final int position) {
         lessonsViewHolder.levelTitleTextView.setText(levelList.get(position).getLevelTitle());
-        if (levelList.get(position).isCompleted()){
+        if (levelList.get(position).isCompleted()) {
             lessonsViewHolder.levelCompleteStatusImageView.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_action_level_success));
             lessonsViewHolder.levelImageView.setBackgroundColor(context.getResources().getColor(android.R.color.white));
             lessonsViewHolder.levelImageView.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_action_label_complete));
             lessonsViewHolder.levelTitleTextView.setTextColor(context.getResources().getColor(R.color.success_blue));
-        }else if(levelList.get(position).isStarted()){
+        } else if (levelList.get(position).isStarted()) {
             lessonsViewHolder.levelCompleteStatusImageView.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_action_level_started));
             lessonsViewHolder.levelImageView.setBackgroundColor(context.getResources().getColor(android.R.color.white));
             lessonsViewHolder.levelImageView.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_action_label_started));
             lessonsViewHolder.levelTitleTextView.setTextColor(context.getResources().getColor(android.R.color.black));
-        }else {
+        } else {
             lessonsViewHolder.levelCompleteStatusImageView.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_action_level_locked));
             lessonsViewHolder.levelImageView.setBackgroundColor(context.getResources().getColor(R.color.light_gray));
             lessonsViewHolder.levelImageView.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_action_label_not_started));
@@ -62,14 +58,126 @@ public class LevelsRecyclerViewAdapter extends RecyclerView.Adapter<LevelsRecycl
         lessonsViewHolder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Integer questionsNumber = 0;
+                Intent openLevelIntent;
                 Level level = levelList.get(position);
-                Intent openLevelIntent = new Intent(context,QuestionActivity.class);
-                openLevelIntent.putExtra("level_name", level.getLevelTitle());
-                openLevelIntent.putExtra("level_id", level.getNumber());
-                openLevelIntent.putExtra("question_number",1);
-                openLevelIntent.putExtra("score_count",0);
-                openLevelIntent.putExtra("total_questions_count",30);
-                context.startActivity(openLevelIntent);
+
+                switch (level.getNumber()) {
+                    case 1:
+                        questionsNumber = Integer.parseInt(context.getResources().getString(R.string.level_one_questions_number));
+
+                        openLevelIntent = new Intent(context, QuestionActivity.class);
+                        openLevelIntent.putExtra("level_name", level.getLevelTitle());
+                        openLevelIntent.putExtra("level_id", level.getNumber());
+                        openLevelIntent.putExtra("question_number", 0);
+                        openLevelIntent.putExtra("score_count", 0);
+                        openLevelIntent.putExtra("total_questions_count", questionsNumber);
+                        context.startActivity(openLevelIntent);
+                        break;
+                    case 2:
+                        questionsNumber = Integer.parseInt(context.getResources().getString(R.string.level_one_questions_number));
+
+                        openLevelIntent = new Intent(context, QuestionActivity.class);
+                        openLevelIntent.putExtra("level_name", level.getLevelTitle());
+                        openLevelIntent.putExtra("level_id", level.getNumber());
+                        openLevelIntent.putExtra("question_number", 0);
+                        openLevelIntent.putExtra("score_count", 0);
+                        openLevelIntent.putExtra("total_questions_count", questionsNumber);
+                        context.startActivity(openLevelIntent);
+                        break;
+                    case 3:
+                        questionsNumber = Integer.parseInt(context.getResources().getString(R.string.level_one_questions_number));
+
+                        openLevelIntent = new Intent(context, QuestionActivity.class);
+                        openLevelIntent.putExtra("level_name", level.getLevelTitle());
+                        openLevelIntent.putExtra("level_id", level.getNumber());
+                        openLevelIntent.putExtra("question_number", 0);
+                        openLevelIntent.putExtra("score_count", 0);
+                        openLevelIntent.putExtra("total_questions_count", questionsNumber);
+                        context.startActivity(openLevelIntent);
+                        break;
+                    case 4:
+                        questionsNumber = Integer.parseInt(context.getResources().getString(R.string.level_one_questions_number));
+
+                        openLevelIntent = new Intent(context, QuestionActivity.class);
+                        openLevelIntent.putExtra("level_name", level.getLevelTitle());
+                        openLevelIntent.putExtra("level_id", level.getNumber());
+                        openLevelIntent.putExtra("question_number", 0);
+                        openLevelIntent.putExtra("score_count", 0);
+                        openLevelIntent.putExtra("total_questions_count", questionsNumber);
+                        context.startActivity(openLevelIntent);
+                        break;
+                    case 5:
+                        questionsNumber = Integer.parseInt(context.getResources().getString(R.string.level_one_questions_number));
+
+                        openLevelIntent = new Intent(context, QuestionActivity.class);
+                        openLevelIntent.putExtra("level_name", level.getLevelTitle());
+                        openLevelIntent.putExtra("level_id", level.getNumber());
+                        openLevelIntent.putExtra("question_number", 0);
+                        openLevelIntent.putExtra("score_count", 0);
+                        openLevelIntent.putExtra("total_questions_count", questionsNumber);
+                        context.startActivity(openLevelIntent);
+                        break;
+                    case 6:
+                        questionsNumber = Integer.parseInt(context.getResources().getString(R.string.level_one_questions_number));
+
+                        openLevelIntent = new Intent(context, QuestionActivity.class);
+                        openLevelIntent.putExtra("level_name", level.getLevelTitle());
+                        openLevelIntent.putExtra("level_id", level.getNumber());
+                        openLevelIntent.putExtra("question_number", 0);
+                        openLevelIntent.putExtra("score_count", 0);
+                        openLevelIntent.putExtra("total_questions_count", questionsNumber);
+                        context.startActivity(openLevelIntent);
+                        break;
+                    case 7:
+                        questionsNumber = Integer.parseInt(context.getResources().getString(R.string.level_one_questions_number));
+
+                        openLevelIntent = new Intent(context, QuestionActivity.class);
+                        openLevelIntent.putExtra("level_name", level.getLevelTitle());
+                        openLevelIntent.putExtra("level_id", level.getNumber());
+                        openLevelIntent.putExtra("question_number", 0);
+                        openLevelIntent.putExtra("score_count", 0);
+                        openLevelIntent.putExtra("total_questions_count", questionsNumber);
+                        context.startActivity(openLevelIntent);
+                        break;
+                    case 8:
+                        questionsNumber = Integer.parseInt(context.getResources().getString(R.string.level_one_questions_number));
+
+                        openLevelIntent = new Intent(context, QuestionActivity.class);
+                        openLevelIntent.putExtra("level_name", level.getLevelTitle());
+                        openLevelIntent.putExtra("level_id", level.getNumber());
+                        openLevelIntent.putExtra("question_number", 0);
+                        openLevelIntent.putExtra("score_count", 0);
+                        openLevelIntent.putExtra("total_questions_count", questionsNumber);
+                        context.startActivity(openLevelIntent);
+                        break;
+                    case 9:
+                        questionsNumber = Integer.parseInt(context.getResources().getString(R.string.level_one_questions_number));
+
+                        openLevelIntent = new Intent(context, QuestionActivity.class);
+                        openLevelIntent.putExtra("level_name", level.getLevelTitle());
+                        openLevelIntent.putExtra("level_id", level.getNumber());
+                        openLevelIntent.putExtra("question_number", 0);
+                        openLevelIntent.putExtra("score_count", 0);
+                        openLevelIntent.putExtra("total_questions_count", questionsNumber);
+                        context.startActivity(openLevelIntent);
+                        break;
+                    case 10:
+                        questionsNumber = Integer.parseInt(context.getResources().getString(R.string.level_one_questions_number));
+
+                        openLevelIntent = new Intent(context, QuestionActivity.class);
+                        openLevelIntent.putExtra("level_name", level.getLevelTitle());
+                        openLevelIntent.putExtra("level_id", level.getNumber());
+                        openLevelIntent.putExtra("question_number", 0);
+                        openLevelIntent.putExtra("score_count", 0);
+                        openLevelIntent.putExtra("total_questions_count", questionsNumber);
+                        context.startActivity(openLevelIntent);
+                        break;
+                    default:
+                        break;
+                }
+
+
             }
         });
 

@@ -21,6 +21,11 @@ public class QuestionActivity extends AppCompatActivity {
     Integer totalQuestionInLevel = 0;
     Integer scoreCount = 0;
 
+    Button answerOptionAButton;
+    Button answerOptionBButton;
+    Button answerOptionCButton;
+    Button answerOptionDButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,35 +33,257 @@ public class QuestionActivity extends AppCompatActivity {
 
         questionPromptTextView = findViewById(R.id.question_textview);
         questionNumberProgressTextView = findViewById(R.id.question_number_textview);
-        Button answerOptionAButton = findViewById(R.id.answer_option_A_button);
-        Button answerOptionBButton = findViewById(R.id.answer_option_B_button);
-        Button answerOptionCButton = findViewById(R.id.answer_option_C_button);
-        Button answerOptionDButton = findViewById(R.id.answer_option_D_button);
+        answerOptionAButton = findViewById(R.id.answer_option_A_button);
+        answerOptionBButton = findViewById(R.id.answer_option_B_button);
+        answerOptionCButton = findViewById(R.id.answer_option_C_button);
+        answerOptionDButton = findViewById(R.id.answer_option_D_button);
 
         Bundle bundle = getIntent().getExtras();
-        if (bundle != null){
-             questionNumber = (Integer) bundle.get("question_number");
-             levelName = (String)bundle.get("level_name");
-             level_id = (Integer)bundle.get("level_id");
-             totalQuestionInLevel = (Integer)bundle.get("total_questions_count");
-             scoreCount = (Integer)bundle.get("score_count");
-        }else {
-            Log.e(getClass().getSimpleName(),"Question is null");
+        if (bundle != null) {
+            questionNumber = (Integer) bundle.get("question_number");
+            questionNumber += 1;
+            levelName = (String) bundle.get("level_name");
+            level_id = (Integer) bundle.get("level_id");
+            totalQuestionInLevel = (Integer) bundle.get("total_questions_count");
+            scoreCount = (Integer) bundle.get("score_count");
+        } else {
+            Log.e(getClass().getSimpleName(), "Question is null");
             questionPromptTextView.setText(R.string.general_error_unable_to_load_question);
         }
 
-        questionNumberProgressTextView.setText(questionNumber+"/"+totalQuestionInLevel);
+        questionNumberProgressTextView.setText((questionNumber) + "/" + totalQuestionInLevel);
 
-        answerOptionAButton.setText(R.string.sample_answer_a);
-        answerOptionBButton.setText(R.string.sample_answer_b);
-        answerOptionCButton.setText(R.string.sample_answer_c);
-        answerOptionDButton.setText(R.string.sample_answer_d);
-
+        switch (level_id) {
+            case 1:
+                setUpLeveOneQuestions();
+                setUpLevelOneQuestionOptions();
+                break;
+            case 2:
+                setUpLeveTwoQuestions();
+                setUpLevelTwoQuestionOptions();
+                break;
+            case 3:
+                setUpLeveThreeQuestions();
+                break;
+            case 4:
+                break;
+            case 5:
+                break;
+            case 6:
+                break;
+            case 7:
+                break;
+            case 8:
+                break;
+            case 9:
+                break;
+            case 10:
+                break;
+        }
     }
+
+    public void setUpLeveOneQuestions() {
+        switch (questionNumber) {
+            case 1:
+                questionPromptTextView.setText(getResources().getString(R.string.level_one_question_one));
+                break;
+            case 2:
+                questionPromptTextView.setText(getResources().getString(R.string.level_one_question_one));
+                break;
+            case 3:
+                questionPromptTextView.setText(getResources().getString(R.string.level_two_question_one));
+                break;
+            default:
+        }
+    }
+
+    public void setUpLeveTwoQuestions() {
+        switch (questionNumber) {
+            case 1:
+                questionPromptTextView.setText(getResources().getString(R.string.level_two_question_one));
+                break;
+            case 2:
+                questionPromptTextView.setText(getResources().getString(R.string.level_one_question_one));
+                break;
+            case 3:
+                questionPromptTextView.setText(getResources().getString(R.string.level_two_question_one));
+                break;
+            default:
+        }
+    }
+
+    public void setUpLeveThreeQuestions() {
+        switch (questionNumber) {
+            case 1:
+                questionPromptTextView.setText(getResources().getString(R.string.level_three_question_one));
+                break;
+            case 2:
+                questionPromptTextView.setText(getResources().getString(R.string.level_one_question_one));
+                break;
+            case 3:
+                questionPromptTextView.setText(getResources().getString(R.string.level_two_question_one));
+                break;
+            default:
+        }
+    }
+
+    public void setUpLeveFourQuestions() {
+        switch (questionNumber) {
+            case 1:
+                questionPromptTextView.setText(getResources().getString(R.string.level_four_question_one));
+                break;
+            case 2:
+                questionPromptTextView.setText(getResources().getString(R.string.level_one_question_one));
+                break;
+            case 3:
+                questionPromptTextView.setText(getResources().getString(R.string.level_two_question_one));
+                break;
+            default:
+        }
+    }
+
+    public void setUpLeveFiveQuestions() {
+        switch (questionNumber) {
+            case 1:
+                questionPromptTextView.setText(getResources().getString(R.string.level_five_question_one));
+                break;
+            case 2:
+                questionPromptTextView.setText(getResources().getString(R.string.level_one_question_one));
+                break;
+            case 3:
+                questionPromptTextView.setText(getResources().getString(R.string.level_two_question_one));
+                break;
+            default:
+        }
+    }
+
+    public void setUpLeveSixQuestions() {
+        switch (questionNumber) {
+            case 1:
+                questionPromptTextView.setText(getResources().getString(R.string.level_six_question_one));
+                break;
+            case 2:
+                questionPromptTextView.setText(getResources().getString(R.string.level_one_question_one));
+                break;
+            case 3:
+                questionPromptTextView.setText(getResources().getString(R.string.level_two_question_one));
+                break;
+            default:
+        }
+    }
+
+    public void setUpLeveSevenQuestions() {
+        switch (questionNumber) {
+            case 1:
+                questionPromptTextView.setText(getResources().getString(R.string.level_seven_question_one));
+                break;
+            case 2:
+                questionPromptTextView.setText(getResources().getString(R.string.level_one_question_one));
+                break;
+            case 3:
+                questionPromptTextView.setText(getResources().getString(R.string.level_two_question_one));
+                break;
+            default:
+        }
+    }
+
+    public void setUpLeveEightQuestions() {
+        switch (questionNumber) {
+            case 1:
+                questionPromptTextView.setText(getResources().getString(R.string.level_eight_question_one));
+                break;
+            case 2:
+                questionPromptTextView.setText(getResources().getString(R.string.level_one_question_one));
+                break;
+            case 3:
+                questionPromptTextView.setText(getResources().getString(R.string.level_two_question_one));
+                break;
+            default:
+        }
+    }
+
+    public void setUpLeveNineQuestions() {
+        switch (questionNumber) {
+            case 1:
+                questionPromptTextView.setText(getResources().getString(R.string.level_nine_question_one));
+                break;
+            case 2:
+                questionPromptTextView.setText(getResources().getString(R.string.level_one_question_one));
+                break;
+            case 3:
+                questionPromptTextView.setText(getResources().getString(R.string.level_two_question_one));
+                break;
+            default:
+        }
+    }
+
+    public void setUpLevelTenQuestions() {
+        switch (questionNumber) {
+            case 1:
+                questionPromptTextView.setText(getResources().getString(R.string.level_ten_question_one));
+                break;
+            case 2:
+                questionPromptTextView.setText(getResources().getString(R.string.level_one_question_one));
+                break;
+            case 3:
+                questionPromptTextView.setText(getResources().getString(R.string.level_two_question_one));
+                break;
+            default:
+        }
+    }
+
+    public void setUpLevelOneQuestionOptions() {
+        switch (questionNumber) {
+            case 1:
+                answerOptionAButton.setText(R.string.level_one_question_one_option_one);
+                answerOptionBButton.setText(R.string.level_one_question_one_option_two);
+                answerOptionCButton.setText(R.string.level_one_question_one_option_three);
+                answerOptionDButton.setText(R.string.level_one_question_one_option_four);
+                break;
+            case 2:
+                answerOptionAButton.setText(R.string.level_one_question_two_option_one);
+                answerOptionBButton.setText(R.string.level_one_question_two_option_one);
+                answerOptionCButton.setText(R.string.level_one_question_two_option_one);
+                answerOptionDButton.setText(R.string.level_one_question_two_option_one);
+                break;
+            case 3:
+                answerOptionAButton.setText(R.string.level_one_question_three_option_one);
+                answerOptionBButton.setText(R.string.level_one_question_three_option_one);
+                answerOptionCButton.setText(R.string.level_one_question_three_option_one);
+                answerOptionDButton.setText(R.string.level_one_question_three_option_one);
+                break;
+            default:
+        }
+    }
+
+    public void setUpLevelTwoQuestionOptions() {
+        switch (questionNumber) {
+            case 1:
+                answerOptionAButton.setText(R.string.level_one_question_one_option_one);
+                answerOptionBButton.setText(R.string.level_one_question_one_option_two);
+                answerOptionCButton.setText(R.string.level_one_question_one_option_three);
+                answerOptionDButton.setText(R.string.level_one_question_one_option_four);
+                break;
+            case 2:
+                answerOptionAButton.setText(R.string.level_one_question_two_option_one);
+                answerOptionBButton.setText(R.string.level_one_question_two_option_one);
+                answerOptionCButton.setText(R.string.level_one_question_two_option_one);
+                answerOptionDButton.setText(R.string.level_one_question_two_option_one);
+                break;
+            case 3:
+                answerOptionAButton.setText(R.string.level_one_question_three_option_one);
+                answerOptionBButton.setText(R.string.level_one_question_three_option_one);
+                answerOptionCButton.setText(R.string.level_one_question_three_option_one);
+                answerOptionDButton.setText(R.string.level_one_question_three_option_one);
+                break;
+            default:
+        }
+    }
+
 
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        startActivity( new Intent(QuestionActivity.this,MainActivity.class));
+        startActivity(new Intent(QuestionActivity.this, MainActivity.class));
     }
 }
