@@ -41,7 +41,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="A Plus Apps"
+        android:text="@string/general_company_name"
         android:layout_above="@+id/drawer_menu_username_textView"
         android:layout_alignStart="@+id/drawer_menu_username_textView"
         android:textColor="@android:color/white" />

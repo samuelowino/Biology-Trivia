@@ -38,15 +38,17 @@ public class LevelsRecyclerViewAdapter extends RecyclerView.Adapter<LevelsRecycl
     public void onBindViewHolder(@NonNull final LessonViewHolder lessonsViewHolder, final int position) {
         lessonsViewHolder.levelTitleTextView.setText(levelList.get(position).getLevelTitle());
         if (levelList.get(position).isCompleted()){
-            lessonsViewHolder.levelCompleteStatusImageView.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_action_level_complete));
+            lessonsViewHolder.levelCompleteStatusImageView.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_action_level_success));
             lessonsViewHolder.levelImageView.setBackgroundColor(context.getResources().getColor(android.R.color.white));
             lessonsViewHolder.levelImageView.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_action_label_complete));
+            lessonsViewHolder.levelTitleTextView.setTextColor(context.getResources().getColor(R.color.success_blue));
         }else if(levelList.get(position).isStarted()){
             lessonsViewHolder.levelCompleteStatusImageView.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_action_level_started));
-            lessonsViewHolder.levelImageView.setBackgroundColor(context.getResources().getColor(android.R.color.holo_blue_bright));
+            lessonsViewHolder.levelImageView.setBackgroundColor(context.getResources().getColor(android.R.color.white));
             lessonsViewHolder.levelImageView.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_action_label_started));
+            lessonsViewHolder.levelTitleTextView.setTextColor(context.getResources().getColor(android.R.color.black));
         }else {
-            lessonsViewHolder.levelCompleteStatusImageView.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_action_level_unlock));
+            lessonsViewHolder.levelCompleteStatusImageView.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_action_level_locked));
             lessonsViewHolder.levelImageView.setBackgroundColor(context.getResources().getColor(R.color.light_gray));
             lessonsViewHolder.levelImageView.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_action_label_not_started));
         }

@@ -9,7 +9,6 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
@@ -24,7 +23,6 @@ import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
 
 import org.aplusstudios.com.biologytrivia.adapters.LevelsRecyclerViewAdapter;
-import org.aplusstudios.com.biologytrivia.custom.DividerDecorator;
 import org.aplusstudios.com.biologytrivia.model.Answer;
 import org.aplusstudios.com.biologytrivia.model.Level;
 

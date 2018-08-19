@@ -4,7 +4,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 
 import org.aplusstudios.com.biologytrivia.model.Answer;
@@ -14,15 +13,7 @@ import java.util.List;
 
 public class QuestionActivity extends AppCompatActivity {
 
-    private List<Answer> answerList;
     private Question question;
-
-    private TextView questionPromptTextView;
-
-    private Button answerOptionAButton;
-    private Button answerOptionBButton;
-    private Button answerOptionCButton;
-    private Button answerOptionDButton;
 
 
     @Override
@@ -30,28 +21,28 @@ public class QuestionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question);
 
-        questionPromptTextView = findViewById(R.id.question_textview);
-        answerOptionAButton = findViewById(R.id.answer_option_A_button);
-        answerOptionBButton = findViewById(R.id.answer_option_B_button);
-        answerOptionCButton = findViewById(R.id.answer_option_C_button);
-        answerOptionDButton = findViewById(R.id.answer_option_D_button);
+        TextView questionPromptTextView = findViewById(R.id.question_textview);
+        Button answerOptionAButton = findViewById(R.id.answer_option_A_button);
+        Button answerOptionBButton = findViewById(R.id.answer_option_B_button);
+        Button answerOptionCButton = findViewById(R.id.answer_option_C_button);
+        Button answerOptionDButton = findViewById(R.id.answer_option_D_button);
 
 
         Bundle bundle = getIntent().getExtras();
         if (bundle != null){
-            String question = (String) bundle.get("question");
-            answerList = (List<Answer>)bundle.get("answers_list");
+            String question = (String) bundle.get(getString(R.string.general_question));
+            List<Answer> answerList = (List<Answer>) bundle.get("answers_list");
             Log.e(getClass().getSimpleName(),"Question"+ question);
             questionPromptTextView.setText(question);
         }else {
             Log.e(getClass().getSimpleName(),"Question is null");
-            questionPromptTextView.setText("Unable to load question as this time.");
+            questionPromptTextView.setText(R.string.general_error_unable_to_load_question);
         }
 
-        answerOptionAButton.setText("Choose this answer");
-        answerOptionBButton.setText("OR choose this answer");
-        answerOptionCButton.setText("OR this answer");
-        answerOptionDButton.setText("OR all these answers");
+        answerOptionAButton.setText(R.string.sample_answer_a);
+        answerOptionBButton.setText(R.string.sample_answer_b);
+        answerOptionCButton.setText(R.string.sample_c);
+        answerOptionDButton.setText(R.string.sample_answer_d);
 
     }
 }

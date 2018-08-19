@@ -51,7 +51,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     testImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation('com.crashlytics.sdk.android:crashlytics:2.9.4@aar') {
-        transitive = true;
+        transitive = true
     }
 
 }

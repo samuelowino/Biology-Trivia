@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.aplusstudios.com.biologytrivia">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -17,11 +19,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".QuestionActivity"></activity>
+        <activity android:name=".QuestionActivity"/>
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="f371244e160ee1e49109da85c99d2fa0b46abbba" />
     </application>
 
-    <uses-permission android:name="android.permission.INTERNET" />
 </manifest>

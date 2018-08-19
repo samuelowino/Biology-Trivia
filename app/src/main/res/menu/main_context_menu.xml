@@ -5,6 +5,6 @@
         android:checkable="true"
         android:checked="true"
         android:icon="@drawable/ic_action_tem"
-        android:title="Home" />
+        android:title="@string/general_home" />
 
 </menu>

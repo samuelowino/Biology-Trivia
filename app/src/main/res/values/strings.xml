@@ -16,4 +16,27 @@
     <!-- sample text -->
     <string name="level1">Introduction</string>
     <string name="level2">Cell Biology</string>
+    <string name="general_get_free_coins">click to get free coins</string>
+    <string name="general_your_remaing_coins">Your remaining coins</string>
+    <string name="general_your_available_keys">Your available keys</string>
+    <string name="general_unlock_question">unlock_question</string>
+    <string name="general_level_lable">level lable</string>
+    <string name="general_level_unlock_status">level unlock status</string>
+    <string name="sample_progress_title">Progress 20% | Master</string>
+    <string name="general_get_free_coins_text">Get FREE coins</string>
+    <string name="sample_number_of_coins">5,000 coins</string>
+    <string name="sample_number_of_keys">50 Keys</string>
+    <string name="promo_text">Promo</string>
+    <string name="general_company_name">A Plus Apps</string>
+    <string name="general_home">Home</string>
+    <string name="sample_question_number">5/10</string>
+    <string name="sample_timer_display">00:27</string>
+    <string name="sample_question">Which country is this landmark located in ?</string>
+    <string name="sample_level_title">Level 1</string>
+    <string name="general_question">question</string>
+    <string name="general_error_unable_to_load_question">Unable to load question as this time.</string>
+    <string name="sample_answer_a">Choose this answer</string>
+    <string name="sample_answer_b">OR choose this answer</string>
+    <string name="sample_c">OR this answer</string>
+    <string name="sample_answer_d">OR all these answers</string>
 </resources>

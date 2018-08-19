@@ -19,6 +19,7 @@
             android:id="@+id/level_image_view"
             android:background="@android:color/holo_blue_light"
             android:src="@drawable/ic_action_label_complete"
+            android:contentDescription="@string/general_level_lable"
             android:scaleType="center"
             android:layout_width="match_parent"
             android:layout_height="100dp" />
@@ -29,7 +30,7 @@
 
             <TextView
                 android:id="@+id/level_name_textview"
-                android:text="Level 1"
+                android:text="@string/sample_level_title"
                 android:textSize="21sp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
@@ -38,6 +39,7 @@
                 android:id="@+id/level_complete_status"
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="2dp"
+                android:contentDescription="@string/general_level_unlock_status"
                 android:src="@drawable/ic_action_level_unlock"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />

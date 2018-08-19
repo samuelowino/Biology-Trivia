@@ -69,6 +69,7 @@
                     android:max="100"
                     android:minHeight="20dp"
                     android:layout_marginStart="8dp"
+                    android:progressBackgroundTint="@android:color/black"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
                     android:layout_marginBottom="44dp" />
