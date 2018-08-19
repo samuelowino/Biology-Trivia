@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -25,6 +26,8 @@ public class QuestionActivity extends AppCompatActivity {
     Button answerOptionBButton;
     Button answerOptionCButton;
     Button answerOptionDButton;
+
+    String correctAnswer = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +55,157 @@ public class QuestionActivity extends AppCompatActivity {
         }
 
         questionNumberProgressTextView.setText((questionNumber) + "/" + totalQuestionInLevel);
+
+
+        answerOptionAButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (correctAnswer.contains("A")) {
+                    answerOptionAButton.setBackgroundColor(getResources().getColor(R.color.success_blue));
+
+                    if (questionNumber == totalQuestionInLevel) {
+                        Intent intent = new Intent(QuestionActivity.this, GamePlayScoreActivity.class);
+                        startActivity(intent);
+                    } else {
+                        Intent openLevelIntent = new Intent(QuestionActivity.this, QuestionActivity.class);
+                        openLevelIntent.putExtra("level_name", levelName);
+                        openLevelIntent.putExtra("level_id", level_id);
+                        openLevelIntent.putExtra("question_number", questionNumber);
+                        openLevelIntent.putExtra("score_count", scoreCount + 1);
+                        openLevelIntent.putExtra("total_questions_count", totalQuestionInLevel);
+                        startActivity(openLevelIntent);
+                    }
+                } else {
+                    answerOptionAButton.setBackgroundColor(getResources().getColor(android.R.color.holo_red_dark));
+
+                    if (questionNumber == totalQuestionInLevel) {
+                        Intent intent = new Intent(QuestionActivity.this, GamePlayScoreActivity.class);
+                        startActivity(intent);
+                    } else {
+                        Intent openLevelIntent = new Intent(QuestionActivity.this, QuestionActivity.class);
+                        openLevelIntent.putExtra("level_name", levelName);
+                        openLevelIntent.putExtra("level_id", level_id);
+                        openLevelIntent.putExtra("question_number", questionNumber);
+                        openLevelIntent.putExtra("score_count", scoreCount + 1);
+                        openLevelIntent.putExtra("total_questions_count", totalQuestionInLevel);
+                        startActivity(openLevelIntent);
+                    }
+                }
+            }
+        });
+
+        answerOptionBButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (correctAnswer.contains("B")) {
+                    answerOptionBButton.setBackgroundColor(getResources().getColor(R.color.success_blue));
+
+                    if (questionNumber == totalQuestionInLevel) {
+                        Intent intent = new Intent(QuestionActivity.this, GamePlayScoreActivity.class);
+                        startActivity(intent);
+                    } else {
+
+                        Intent openLevelIntent = new Intent(QuestionActivity.this, QuestionActivity.class);
+                        openLevelIntent.putExtra("level_name", levelName);
+                        openLevelIntent.putExtra("level_id", level_id);
+                        openLevelIntent.putExtra("question_number", questionNumber);
+                        openLevelIntent.putExtra("score_count", scoreCount + 1);
+                        openLevelIntent.putExtra("total_questions_count", totalQuestionInLevel);
+                        startActivity(openLevelIntent);
+                    }
+                } else {
+                    answerOptionBButton.setBackgroundColor(getResources().getColor(android.R.color.holo_red_dark));
+
+                    if (questionNumber == totalQuestionInLevel) {
+                        Intent intent = new Intent(QuestionActivity.this, GamePlayScoreActivity.class);
+                        startActivity(intent);
+                    } else {
+                        Intent openLevelIntent = new Intent(QuestionActivity.this, QuestionActivity.class);
+                        openLevelIntent.putExtra("level_name", levelName);
+                        openLevelIntent.putExtra("level_id", level_id);
+                        openLevelIntent.putExtra("question_number", questionNumber);
+                        openLevelIntent.putExtra("score_count", scoreCount);
+                        openLevelIntent.putExtra("total_questions_count", totalQuestionInLevel);
+                        startActivity(openLevelIntent);
+                    }
+                }
+            }
+        });
+
+        answerOptionCButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (correctAnswer.contains("C")) {
+                    answerOptionCButton.setBackgroundColor(getResources().getColor(R.color.success_blue));
+
+                    if (questionNumber == totalQuestionInLevel) {
+                        Intent intent = new Intent(QuestionActivity.this, GamePlayScoreActivity.class);
+                        startActivity(intent);
+                    } else {
+
+                        Intent openLevelIntent = new Intent(QuestionActivity.this, QuestionActivity.class);
+                        openLevelIntent.putExtra("level_name", levelName);
+                        openLevelIntent.putExtra("level_id", level_id);
+                        openLevelIntent.putExtra("question_number", questionNumber);
+                        openLevelIntent.putExtra("score_count", scoreCount + 1);
+                        openLevelIntent.putExtra("total_questions_count", totalQuestionInLevel);
+                        startActivity(openLevelIntent);
+                    }
+                } else {
+                    answerOptionCButton.setBackgroundColor(getResources().getColor(android.R.color.holo_red_dark));
+
+                    if (questionNumber == totalQuestionInLevel) {
+                        Intent intent = new Intent(QuestionActivity.this, GamePlayScoreActivity.class);
+                        startActivity(intent);
+                    } else {
+                        Intent openLevelIntent = new Intent(QuestionActivity.this, QuestionActivity.class);
+                        openLevelIntent.putExtra("level_name", levelName);
+                        openLevelIntent.putExtra("level_id", level_id);
+                        openLevelIntent.putExtra("question_number", questionNumber);
+                        openLevelIntent.putExtra("score_count", scoreCount);
+                        openLevelIntent.putExtra("total_questions_count", totalQuestionInLevel);
+                        startActivity(openLevelIntent);
+                    }
+                }
+            }
+        });
+
+        answerOptionDButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (correctAnswer.contains("D")) {
+                    answerOptionDButton.setBackgroundColor(getResources().getColor(R.color.success_blue));
+
+                    if (questionNumber == totalQuestionInLevel) {
+                        Intent intent = new Intent(QuestionActivity.this, GamePlayScoreActivity.class);
+                        startActivity(intent);
+                    } else {
+                        Intent openLevelIntent = new Intent(QuestionActivity.this, QuestionActivity.class);
+                        openLevelIntent.putExtra("level_name", levelName);
+                        openLevelIntent.putExtra("level_id", level_id);
+                        openLevelIntent.putExtra("question_number", questionNumber);
+                        openLevelIntent.putExtra("score_count", scoreCount + 1);
+                        openLevelIntent.putExtra("total_questions_count", totalQuestionInLevel);
+                        startActivity(openLevelIntent);
+                    }
+                } else {
+                    answerOptionDButton.setBackgroundColor(getResources().getColor(android.R.color.holo_red_dark));
+
+                    if (questionNumber == totalQuestionInLevel) {
+                        Intent intent = new Intent(QuestionActivity.this, GamePlayScoreActivity.class);
+                        startActivity(intent);
+                    } else {
+                        Intent openLevelIntent = new Intent(QuestionActivity.this, QuestionActivity.class);
+                        openLevelIntent.putExtra("level_name", levelName);
+                        openLevelIntent.putExtra("level_id", level_id);
+                        openLevelIntent.putExtra("question_number", questionNumber);
+                        openLevelIntent.putExtra("score_count", scoreCount);
+                        openLevelIntent.putExtra("total_questions_count", totalQuestionInLevel);
+                        startActivity(openLevelIntent);
+                    }
+                }
+            }
+        });
 
         switch (level_id) {
             case 1:
@@ -86,12 +240,17 @@ public class QuestionActivity extends AppCompatActivity {
         switch (questionNumber) {
             case 1:
                 questionPromptTextView.setText(getResources().getString(R.string.level_one_question_one));
+                correctAnswer = getResources().getString(R.string.level_one_question_one_answer);
                 break;
             case 2:
                 questionPromptTextView.setText(getResources().getString(R.string.level_one_question_one));
+                correctAnswer = getResources().getString(R.string.level_one_question_one_answer);
+
                 break;
             case 3:
                 questionPromptTextView.setText(getResources().getString(R.string.level_two_question_one));
+                correctAnswer = getResources().getString(R.string.level_one_question_one_answer);
+
                 break;
             default:
         }

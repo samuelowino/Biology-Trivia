@@ -23,7 +23,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="url" value="jar:file:/home/muzima/android-studio/plugins/android/lib/android.jar!/images/material_design_icons/social/ic_public_black_24dp.xml" />
+                                                <entry key="url" value="jar:file:/home/muzima/android-studio/plugins/android/lib/android.jar!/images/material_design_icons/editor/ic_monetization_on_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -33,9 +33,9 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="outputName" value="ic_action_app_icon" />
+                                      <entry key="outputName" value="ic_action_coin_yellow" />
                                       <entry key="theme" value="CUSTOM" />
-                                      <entry key="themeColor" value="2ec9ff" />
+                                      <entry key="themeColor" value="ffe02d" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -69,6 +69,11 @@
                                 </PersistentState>
                               </value>
                             </entry>
+                          </map>
+                        </option>
+                        <option name="values">
+                          <map>
+                            <entry key="outputIconType" value="ACTIONBAR" />
                           </map>
                         </option>
                       </PersistentState>

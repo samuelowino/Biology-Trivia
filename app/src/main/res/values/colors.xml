@@ -6,4 +6,5 @@
     <color name="colorAccent">#ec0505</color>
     <color name="divider_color">#acaaaa</color>
     <color name="success_blue">#13aafc</color>
+    <color name="yellow_answer_button">#c4b809</color>
 </resources>
