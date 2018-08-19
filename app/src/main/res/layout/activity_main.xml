@@ -28,6 +28,112 @@
 
             </android.support.v7.widget.Toolbar>
 
+            <RelativeLayout
+                android:id="@+id/landing_page_status_bar"
+                android:background="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/user_avatar_imageview"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="46dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="6dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:src="@drawable/ic_action_avatart_a"
+                    app:border_color="@color/colorAccent"
+                    app:border_width="0dp"
+                    app:paddingStart="6dp" />
+
+                <TextView
+                    android:layout_below="@+id/user_avatar_imageview"
+                    android:id="@+id/level_unlocked_textview"
+                    android:text="Progress 20% | Master"
+                    android:layout_marginStart="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ProgressBar
+                    android:id="@+id/player_level_progressBar"
+                    android:layout_below="@+id/level_unlocked_textview"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="160dp"
+                    android:progress="50"
+                    android:max="100"
+                    android:minHeight="20dp"
+                    android:layout_marginStart="8dp"
+                    android:progressBackgroundTint="@android:color/black"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="44dp" />
+
+                <ImageView
+                    android:id="@+id/reward_video_image_view"
+                    android:layout_toLeftOf="@+id/free_coins_textview"
+                    android:src="@drawable/ic_action_reward_video"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/free_coins_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Get FREE coins" />
+
+
+                <TextView
+                    android:id="@+id/number_coins_textview"
+                    android:text="5,000 coins"
+                    android:layout_below="@+id/free_coins_textview"
+                    android:layout_marginEnd="8dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="22dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/availabel_coins_image_view"
+                    android:layout_below="@+id/reward_video_image_view"
+                    android:layout_marginTop="8dp"
+                    android:layout_alignStart="@+id/reward_video_image_view"
+                    android:src="@drawable/ic_action_coins"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/number_keys_textview"
+                    android:text="50 Keys"
+                    android:layout_below="@+id/number_coins_textview"
+                    android:layout_marginEnd="8dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="22dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <ImageView
+                    android:id="@+id/available_keys_image_view"
+                    android:layout_below="@+id/availabel_coins_image_view"
+                    android:src="@drawable/ic_action_keys"
+                    android:layout_alignStart="@+id/reward_video_image_view"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/recycler_view"
                 android:background="@android:color/white"
@@ -64,7 +170,6 @@
                         android:layout_width="42dp"
                         android:layout_height="42dp"
                         android:layout_marginStart="4dp"
-                        android:layout_marginLeft="4dp"
                         android:layout_marginTop="4dp"
                         android:clickable="true"
                         android:focusable="true"

@@ -85,23 +85,23 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         recyclerView.setLayoutManager(recyclerViewLayoutManager);
 
         List<Level> trackList = Arrays.asList(
-                new Level(1, true, true, getResources().getString(R.string.level1)),//, getResources().getString(R.string.app_name), getResources().getString(R.string.app_name))
-                new Level(1, true, true, getResources().getString(R.string.level2)),//, getResources().getString(R.string.app_name), getResources().getString(R.string.app_name))
-                new Level(1, true, true, getResources().getString(R.string.app_name)),//, getResources().getString(R.string.app_name), getResources().getString(R.string.app_name))
-                new Level(1, true, true, getResources().getString(R.string.app_name)),//, getResources().getString(R.string.app_name), getResources().getString(R.string.app_name))
-                new Level(1, true, true, getResources().getString(R.string.app_name)),
-                new Level(1, true, true, getResources().getString(R.string.app_name)),//, getResources().getString(R.string.app_name), getResources().getString(R.string.app_name))
-                new Level(1, true, true, getResources().getString(R.string.app_name)),//, getResources().getString(R.string.app_name), getResources().getString(R.string.app_name))
-                new Level(1, true, true, getResources().getString(R.string.app_name)),//, getResources().getString(R.string.app_name), getResources().getString(R.string.app_name))
-                new Level(1, true, true, getResources().getString(R.string.app_name)),
-                new Level(1, true, true, getResources().getString(R.string.app_name)),//, getResources().getString(R.string.app_name), getResources().getString(R.string.app_name))
-                new Level(1, true, true, getResources().getString(R.string.app_name)),//, getResources().getString(R.string.app_name), getResources().getString(R.string.app_name))
-                new Level(1, true, true, getResources().getString(R.string.app_name)),//, getResources().getString(R.string.app_name), getResources().getString(R.string.app_name))
-                new Level(1, true, true, getResources().getString(R.string.app_name))//, getResources().getString(R.string.app_name), getResources().getString(R.string.app_name))
+                new Level(1, true, true, getResources().getString(R.string.level1)),
+                new Level(2, true, false, getResources().getString(R.string.level2)),
+                new Level(3, true, false, getResources().getString(R.string.app_name)),
+                new Level(4, false, false, getResources().getString(R.string.app_name)),
+                new Level(5, false, false, getResources().getString(R.string.app_name)),
+                new Level(6, false, false, getResources().getString(R.string.app_name)),
+                new Level(7, false, false, getResources().getString(R.string.app_name)),
+                new Level(8, false, false, getResources().getString(R.string.app_name)),
+                new Level(9, false, false, getResources().getString(R.string.app_name)),
+                new Level(10, false, false, getResources().getString(R.string.app_name)),
+                new Level(11, false, false, getResources().getString(R.string.app_name)),
+                new Level(12, false, false, getResources().getString(R.string.app_name)),
+                new Level(13, false, false, getResources().getString(R.string.app_name))
 
         );
 
-        LevelsRecyclerViewAdapter tracksRecyclerViewAdapter = new LevelsRecyclerViewAdapter(trackList);
+        LevelsRecyclerViewAdapter tracksRecyclerViewAdapter = new LevelsRecyclerViewAdapter(trackList,getApplicationContext());
         recyclerView.setAdapter(tracksRecyclerViewAdapter);
 
         //  startActivity( new Intent(MainActivity.this,GoogleAuthActivity.class));

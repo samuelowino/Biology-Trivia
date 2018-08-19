@@ -18,7 +18,8 @@
         <ImageView
             android:id="@+id/level_image_view"
             android:background="@android:color/holo_blue_light"
-            android:scaleType="centerCrop"
+            android:src="@drawable/ic_action_label_complete"
+            android:scaleType="center"
             android:layout_width="match_parent"
             android:layout_height="100dp" />
 
@@ -34,7 +35,7 @@
                 android:layout_height="wrap_content" />
 
             <ImageView
-                android:id="@+id/level_lock_status"
+                android:id="@+id/level_complete_status"
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="2dp"
                 android:src="@drawable/ic_action_level_unlock"
