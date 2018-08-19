@@ -23,7 +23,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="url" value="jar:file:/home/muzima/android-studio/plugins/android/lib/android.jar!/images/material_design_icons/device/ic_access_alarms_black_24dp.xml" />
+                                                <entry key="url" value="jar:file:/home/muzima/android-studio/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_https_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -33,9 +33,37 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="outputName" value="ic_action_timer" />
+                                      <entry key="outputName" value="ic_action_level_unlock" />
                                       <entry key="theme" value="CUSTOM" />
-                                      <entry key="themeColor" value="e5131a" />
+                                      <entry key="themeColor" value="ff3119" />
+                                    </map>
+                                  </option>
+                                </PersistentState>
+                              </value>
+                            </entry>
+                            <entry key="launcher">
+                              <value>
+                                <PersistentState>
+                                  <option name="children">
+                                    <map>
+                                      <entry key="foregroundImage">
+                                        <value>
+                                          <PersistentState>
+                                            <option name="values">
+                                              <map>
+                                                <entry key="scalingPercent" value="71" />
+                                              </map>
+                                            </option>
+                                          </PersistentState>
+                                        </value>
+                                      </entry>
+                                    </map>
+                                  </option>
+                                  <option name="values">
+                                    <map>
+                                      <entry key="backgroundAssetType" value="COLOR" />
+                                      <entry key="backgroundColor" value="ffffff" />
+                                      <entry key="foregroundImage" value="$USER_HOME$/Music/exam.png" />
                                     </map>
                                   </option>
                                 </PersistentState>

@@ -8,6 +8,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -24,8 +25,10 @@ import com.google.android.gms.ads.MobileAds;
 
 import org.aplusstudios.com.biologytrivia.adapters.LevelsRecyclerViewAdapter;
 import org.aplusstudios.com.biologytrivia.custom.DividerDecorator;
+import org.aplusstudios.com.biologytrivia.model.Answer;
 import org.aplusstudios.com.biologytrivia.model.Level;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -35,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     private ActionBarDrawerToggle actionBarDrawerToggle;
     private InterstitialAd mInterstitialAd;
-
+    private GridLayoutManager gridLayoutManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -78,13 +81,24 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         navigationView.setNavigationItemSelectedListener(this);
 
         RecyclerView recyclerView = findViewById(R.id.recycler_view);
-        RecyclerView.LayoutManager recyclerViewLayoutManager = new LinearLayoutManager(getApplicationContext());
+        RecyclerView.LayoutManager recyclerViewLayoutManager = new GridLayoutManager(getApplicationContext(), 2);
         recyclerView.setLayoutManager(recyclerViewLayoutManager);
-        recyclerView.addItemDecoration(new DividerDecorator(getApplicationContext()));
 
         List<Level> trackList = Arrays.asList(
-//                new Level(getResources().getString(R.string.track_one_title), getResources().getString(R.string.track_one_youtube_id), getResources().getString(R.string.track_one_description_two)),
-                //new Level(getResources().getString(R.string.track_eleven_title),getResources().getString(R.string.track_eleven_youtube_id),getResources().getString(R.string.track_eleven_description))
+                new Level(1, true, true, getResources().getString(R.string.level1)),//, getResources().getString(R.string.app_name), getResources().getString(R.string.app_name))
+                new Level(1, true, true, getResources().getString(R.string.level2)),//, getResources().getString(R.string.app_name), getResources().getString(R.string.app_name))
+                new Level(1, true, true, getResources().getString(R.string.app_name)),//, getResources().getString(R.string.app_name), getResources().getString(R.string.app_name))
+                new Level(1, true, true, getResources().getString(R.string.app_name)),//, getResources().getString(R.string.app_name), getResources().getString(R.string.app_name))
+                new Level(1, true, true, getResources().getString(R.string.app_name)),
+                new Level(1, true, true, getResources().getString(R.string.app_name)),//, getResources().getString(R.string.app_name), getResources().getString(R.string.app_name))
+                new Level(1, true, true, getResources().getString(R.string.app_name)),//, getResources().getString(R.string.app_name), getResources().getString(R.string.app_name))
+                new Level(1, true, true, getResources().getString(R.string.app_name)),//, getResources().getString(R.string.app_name), getResources().getString(R.string.app_name))
+                new Level(1, true, true, getResources().getString(R.string.app_name)),
+                new Level(1, true, true, getResources().getString(R.string.app_name)),//, getResources().getString(R.string.app_name), getResources().getString(R.string.app_name))
+                new Level(1, true, true, getResources().getString(R.string.app_name)),//, getResources().getString(R.string.app_name), getResources().getString(R.string.app_name))
+                new Level(1, true, true, getResources().getString(R.string.app_name)),//, getResources().getString(R.string.app_name), getResources().getString(R.string.app_name))
+                new Level(1, true, true, getResources().getString(R.string.app_name))//, getResources().getString(R.string.app_name), getResources().getString(R.string.app_name))
+
         );
 
         LevelsRecyclerViewAdapter tracksRecyclerViewAdapter = new LevelsRecyclerViewAdapter(trackList);
@@ -92,8 +106,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         //  startActivity( new Intent(MainActivity.this,GoogleAuthActivity.class));
     }
-
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -120,7 +132,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         switch (item.getItemId()) {
             case R.id.profile_menu:
-                startActivity(new Intent(MainActivity.this, QuestionActivity.class));
+                List<Answer> answerList = new ArrayList<>();
+                Answer answer = new Answer("This is an answer", 1, 1, false);
+                Intent intent = new Intent(MainActivity.this, QuestionActivity.class);
+                intent.putExtra("question_text", "This is a question");
+                intent.putExtra("question_id", "1");
+                startActivity(intent);
                 break;
         }
 

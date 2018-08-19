@@ -1,0 +1,987 @@
+{
+  "project_info": {
+    "project_number": "271017948741",
+    "firebase_url": "https://learn-physics-e93b2.firebaseio.com",
+    "project_id": "learn-physics-e93b2",
+    "storage_bucket": "learn-physics-e93b2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271017948741:android:0a6e7e1719495f9c",
+        "android_client_info": {
+          "package_name": "com.androidgeek.org.learnphysics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271017948741-ddangd0cvvhjce1lu97up1i28lggv0sa.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "271017948741-ahnv4tnukcqrodsgqljmh07ib43240rs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.androidgeek.org.learnphysics",
+            "certificate_hash": "3f73e6a5e79a54b32c210a4337987a4f514c8f60"
+          }
+        },
+        {
+          "client_id": "271017948741-668qm7l0esoaafitsg7mt16h0ssf6ngn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5oBuc6FYlcGYJSzefnatop4IPXNrOqL4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "271017948741-ddangd0cvvhjce1lu97up1i28lggv0sa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-5160269550159038~8140686813"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271017948741:android:77c45d2155bf99cc",
+        "android_client_info": {
+          "package_name": "org.androidgeek.com.learnbiology"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271017948741-ddangd0cvvhjce1lu97up1i28lggv0sa.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "271017948741-668qm7l0esoaafitsg7mt16h0ssf6ngn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5oBuc6FYlcGYJSzefnatop4IPXNrOqL4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-5160269550159038~8994631692"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271017948741:android:0abee9460d43f656",
+        "android_client_info": {
+          "package_name": "org.aplusstudios.com.beyoncesongs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271017948741-ddangd0cvvhjce1lu97up1i28lggv0sa.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "271017948741-668qm7l0esoaafitsg7mt16h0ssf6ngn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5oBuc6FYlcGYJSzefnatop4IPXNrOqL4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271017948741:android:37481ad1c223775c",
+        "android_client_info": {
+          "package_name": "org.aplusstudios.com.biologytrivia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271017948741-ddangd0cvvhjce1lu97up1i28lggv0sa.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "271017948741-668qm7l0esoaafitsg7mt16h0ssf6ngn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5oBuc6FYlcGYJSzefnatop4IPXNrOqL4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271017948741:android:682914adf5716172",
+        "android_client_info": {
+          "package_name": "org.aplusstudios.com.drakesongs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271017948741-ddangd0cvvhjce1lu97up1i28lggv0sa.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "271017948741-668qm7l0esoaafitsg7mt16h0ssf6ngn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5oBuc6FYlcGYJSzefnatop4IPXNrOqL4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-5160269550159038~9148635431"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271017948741:android:d0c8f18b8edee769",
+        "android_client_info": {
+          "package_name": "org.aplusstudios.com.europeanhistory_mideaval"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271017948741-ddangd0cvvhjce1lu97up1i28lggv0sa.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "271017948741-668qm7l0esoaafitsg7mt16h0ssf6ngn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5oBuc6FYlcGYJSzefnatop4IPXNrOqL4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-5160269550159038~5323530010"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271017948741:android:57317467abab50e4",
+        "android_client_info": {
+          "package_name": "org.aplusstudios.com.historyofargentina"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271017948741-ddangd0cvvhjce1lu97up1i28lggv0sa.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "271017948741-668qm7l0esoaafitsg7mt16h0ssf6ngn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5oBuc6FYlcGYJSzefnatop4IPXNrOqL4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-5160269550159038~3069274836"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271017948741:android:77b6929b7d039609",
+        "android_client_info": {
+          "package_name": "org.aplusstudios.com.historyofarmenia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271017948741-ddangd0cvvhjce1lu97up1i28lggv0sa.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "271017948741-668qm7l0esoaafitsg7mt16h0ssf6ngn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5oBuc6FYlcGYJSzefnatop4IPXNrOqL4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-5160269550159038~2802718934"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271017948741:android:25d7020a7c574f0e",
+        "android_client_info": {
+          "package_name": "org.aplusstudios.com.historyofbrazil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271017948741-ddangd0cvvhjce1lu97up1i28lggv0sa.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "271017948741-668qm7l0esoaafitsg7mt16h0ssf6ngn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5oBuc6FYlcGYJSzefnatop4IPXNrOqL4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-5160269550159038~9114533345"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271017948741:android:0988e11d12d2339b",
+        "android_client_info": {
+          "package_name": "org.aplusstudios.com.historyofcanada"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271017948741-ddangd0cvvhjce1lu97up1i28lggv0sa.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "271017948741-668qm7l0esoaafitsg7mt16h0ssf6ngn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5oBuc6FYlcGYJSzefnatop4IPXNrOqL4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-5160269550159038~5435460018"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271017948741:android:ca1a31f48d99c86a",
+        "android_client_info": {
+          "package_name": "org.aplusstudios.com.historyofchina"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271017948741-ddangd0cvvhjce1lu97up1i28lggv0sa.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "271017948741-668qm7l0esoaafitsg7mt16h0ssf6ngn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5oBuc6FYlcGYJSzefnatop4IPXNrOqL4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-5160269550159038~1769773679"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271017948741:android:20aea1302693312c",
+        "android_client_info": {
+          "package_name": "org.aplusstudios.com.historyofcolombia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271017948741-ddangd0cvvhjce1lu97up1i28lggv0sa.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "271017948741-668qm7l0esoaafitsg7mt16h0ssf6ngn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5oBuc6FYlcGYJSzefnatop4IPXNrOqL4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-5160269550159038~7220051064"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271017948741:android:2e522f0a0c172b5c",
+        "android_client_info": {
+          "package_name": "org.aplusstudios.com.historyofindia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271017948741-ddangd0cvvhjce1lu97up1i28lggv0sa.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "271017948741-668qm7l0esoaafitsg7mt16h0ssf6ngn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5oBuc6FYlcGYJSzefnatop4IPXNrOqL4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-5160269550159038~5551746172"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271017948741:android:dd43d53f222a5df8",
+        "android_client_info": {
+          "package_name": "org.aplusstudios.com.historyofrussia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271017948741-ddangd0cvvhjce1lu97up1i28lggv0sa.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "271017948741-668qm7l0esoaafitsg7mt16h0ssf6ngn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5oBuc6FYlcGYJSzefnatop4IPXNrOqL4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-5160269550159038~8131132502"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271017948741:android:4924e8334192b341",
+        "android_client_info": {
+          "package_name": "org.aplusstudios.com.jayzsongs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271017948741-ddangd0cvvhjce1lu97up1i28lggv0sa.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "271017948741-668qm7l0esoaafitsg7mt16h0ssf6ngn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5oBuc6FYlcGYJSzefnatop4IPXNrOqL4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271017948741:android:e2b397fa82b4ef68",
+        "android_client_info": {
+          "package_name": "org.aplusstudios.com.jidennasongs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271017948741-ddangd0cvvhjce1lu97up1i28lggv0sa.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "271017948741-668qm7l0esoaafitsg7mt16h0ssf6ngn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5oBuc6FYlcGYJSzefnatop4IPXNrOqL4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271017948741:android:8ea54c4969501bdf",
+        "android_client_info": {
+          "package_name": "org.aplusstudios.com.justinebiebersongs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271017948741-ddangd0cvvhjce1lu97up1i28lggv0sa.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "271017948741-668qm7l0esoaafitsg7mt16h0ssf6ngn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5oBuc6FYlcGYJSzefnatop4IPXNrOqL4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271017948741:android:a783edc05f8c8df1",
+        "android_client_info": {
+          "package_name": "org.aplusstudios.com.kanyewestsongs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271017948741-ddangd0cvvhjce1lu97up1i28lggv0sa.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "271017948741-668qm7l0esoaafitsg7mt16h0ssf6ngn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5oBuc6FYlcGYJSzefnatop4IPXNrOqL4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-5160269550159038~6581345098"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271017948741:android:57a6923f21ce2c54",
+        "android_client_info": {
+          "package_name": "org.aplusstudios.com.katyperrysongs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271017948741-ddangd0cvvhjce1lu97up1i28lggv0sa.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "271017948741-668qm7l0esoaafitsg7mt16h0ssf6ngn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5oBuc6FYlcGYJSzefnatop4IPXNrOqL4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-5160269550159038~6609265254"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271017948741:android:a8538a9eb8d93f85",
+        "android_client_info": {
+          "package_name": "org.aplusstudios.com.learnrobotics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271017948741-ddangd0cvvhjce1lu97up1i28lggv0sa.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "271017948741-668qm7l0esoaafitsg7mt16h0ssf6ngn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5oBuc6FYlcGYJSzefnatop4IPXNrOqL4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-5160269550159038~5245668659"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271017948741:android:dbd1cfa5d39679b9",
+        "android_client_info": {
+          "package_name": "org.aplusstudios.com.notes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271017948741-ddangd0cvvhjce1lu97up1i28lggv0sa.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "271017948741-668qm7l0esoaafitsg7mt16h0ssf6ngn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5oBuc6FYlcGYJSzefnatop4IPXNrOqL4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-5160269550159038~9723350506"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271017948741:android:44ef7cfe161c1692",
+        "android_client_info": {
+          "package_name": "org.aplusstudios.com.octopizzosongs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271017948741-ddangd0cvvhjce1lu97up1i28lggv0sa.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "271017948741-668qm7l0esoaafitsg7mt16h0ssf6ngn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5oBuc6FYlcGYJSzefnatop4IPXNrOqL4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-5160269550159038~9179616522"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271017948741:android:533f8d6551a2396b",
+        "android_client_info": {
+          "package_name": "org.aplusstudios.com.pharrellwilliamssongs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271017948741-ddangd0cvvhjce1lu97up1i28lggv0sa.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "271017948741-668qm7l0esoaafitsg7mt16h0ssf6ngn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5oBuc6FYlcGYJSzefnatop4IPXNrOqL4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271017948741:android:0b492ea75a3ebb87",
+        "android_client_info": {
+          "package_name": "org.aplusstudios.com.rihannasongs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271017948741-ddangd0cvvhjce1lu97up1i28lggv0sa.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "271017948741-668qm7l0esoaafitsg7mt16h0ssf6ngn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5oBuc6FYlcGYJSzefnatop4IPXNrOqL4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271017948741:android:7a7018c8f6ad7edc",
+        "android_client_info": {
+          "package_name": "org.aplusstudios.com.taylorswiftsongs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271017948741-ddangd0cvvhjce1lu97up1i28lggv0sa.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "271017948741-668qm7l0esoaafitsg7mt16h0ssf6ngn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5oBuc6FYlcGYJSzefnatop4IPXNrOqL4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271017948741:android:080c06040b1107a3",
+        "android_client_info": {
+          "package_name": "org.aplusstudios.com.ushistory"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271017948741-ddangd0cvvhjce1lu97up1i28lggv0sa.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "271017948741-668qm7l0esoaafitsg7mt16h0ssf6ngn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5oBuc6FYlcGYJSzefnatop4IPXNrOqL4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      },
+      "admob_app_id": "ca-app-pub-5160269550159038~5942812859"
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:271017948741:android:1daadc21fc75690d",
+        "android_client_info": {
+          "package_name": "org.aplusstudios.com.wizkidsongs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "271017948741-ddangd0cvvhjce1lu97up1i28lggv0sa.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "271017948741-668qm7l0esoaafitsg7mt16h0ssf6ngn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC5oBuc6FYlcGYJSzefnatop4IPXNrOqL4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

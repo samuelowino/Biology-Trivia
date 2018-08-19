@@ -1,6 +1,5 @@
 package org.aplusstudios.com.biologytrivia.adapters;
 
-import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -27,14 +26,14 @@ public class LevelsRecyclerViewAdapter extends RecyclerView.Adapter<LevelsRecycl
     @Override
     public LessonViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.tracks_single_row_cardview, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_game_level, parent, false);
         return new LessonViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull final LessonViewHolder lessonsViewHolder, final int position) {
-        lessonsViewHolder.cardTitleView.setText(levelList.get(position).getLevelTitle());
-        lessonsViewHolder.cardDescription.setText(levelList.get(position).getLevelTitle());
+        lessonsViewHolder.levelTitleTextView.setText(levelList.get(position).getLevelTitle());
+//        lessonsViewHolder.cardView.setCardBackgroundColor(levelList.get(position).getLevelTitle());
     }
 
     @Override
@@ -45,16 +44,16 @@ public class LevelsRecyclerViewAdapter extends RecyclerView.Adapter<LevelsRecycl
     static class LessonViewHolder extends RecyclerView.ViewHolder {
 
         final CardView cardView;
-        final TextView cardTitleView;
-        final TextView cardDescription;
+        final TextView levelTitleTextView;
+//        final TextView cardDescription;
 
         LessonViewHolder(View itemView) {
 
             super(itemView);
-
-            cardView = itemView.findViewById(R.id.cardView);
-            cardTitleView = itemView.findViewById(R.id.card_title);
-            cardDescription = itemView.findViewById(R.id.card_title_description);
+//
+            cardView = itemView.findViewById(R.id.level_title_cardview);
+            levelTitleTextView = itemView.findViewById(R.id.level_name_textview);
+//            cardDescription = itemView.findViewById(R.id.card_title_description);
         }
     }
 }

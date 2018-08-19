@@ -21,7 +21,25 @@
             android:textSize="18sp"
             android:textColor="@android:color/white"
             android:layout_marginTop="2dp"
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/unlock_question_button"
+            android:src="@drawable/ic_action_unlock"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="12dp"
             android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="@string/general_unlock"
+            android:layout_marginEnd="6dp"
+            android:textColor="@android:color/white"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/unlock_question_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -60,6 +78,7 @@
             android:layout_height="wrap_content" />
 
         <TextView
+            android:id="@+id/question_textview"
             android:textSize="18sp"
             android:layout_below="@+id/question_timer_n"
             android:layout_marginTop="16dp"
@@ -78,6 +97,7 @@
         android:background="@color/divider_color"/>
 
     <Button
+        android:id="@+id/answer_option_A_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -85,6 +105,7 @@
         android:layout_marginTop="4dp"/>
 
     <Button
+        android:id="@+id/answer_option_B_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -92,6 +113,7 @@
         android:layout_marginTop="4dp"/>
 
     <Button
+        android:id="@+id/answer_option_C_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -100,6 +122,7 @@
 
 
     <Button
+        android:id="@+id/answer_option_D_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
