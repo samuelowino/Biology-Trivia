@@ -14,6 +14,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 
 import com.crashlytics.android.Crashlytics;
 import com.google.ads.mediation.admob.AdMobAdapter;
@@ -78,7 +79,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         actionBarDrawerToggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
 
-        RecyclerView recyclerView = findViewById(R.id.recycler_view);
+        final RecyclerView recyclerView = findViewById(R.id.recycler_view);
         RecyclerView.LayoutManager recyclerViewLayoutManager = new GridLayoutManager(getApplicationContext(), 2);
         recyclerView.setLayoutManager(recyclerViewLayoutManager);
 
@@ -101,6 +102,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         LevelsRecyclerViewAdapter tracksRecyclerViewAdapter = new LevelsRecyclerViewAdapter(trackList,getApplicationContext());
         recyclerView.setAdapter(tracksRecyclerViewAdapter);
+
+
 
         //  startActivity( new Intent(MainActivity.this,GoogleAuthActivity.class));
     }

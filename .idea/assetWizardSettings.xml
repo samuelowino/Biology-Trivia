@@ -23,7 +23,7 @@
                                           <PersistentState>
                                             <option name="values">
                                               <map>
-                                                <entry key="url" value="jar:file:/home/muzima/android-studio/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_lock_black_24dp.xml" />
+                                                <entry key="url" value="jar:file:/home/muzima/android-studio/plugins/android/lib/android.jar!/images/material_design_icons/social/ic_public_black_24dp.xml" />
                                               </map>
                                             </option>
                                           </PersistentState>
@@ -33,8 +33,9 @@
                                   </option>
                                   <option name="values">
                                     <map>
-                                      <entry key="outputName" value="ic_action_level_locked" />
-                                      <entry key="themeColor" value="3496e2" />
+                                      <entry key="outputName" value="ic_action_app_icon" />
+                                      <entry key="theme" value="CUSTOM" />
+                                      <entry key="themeColor" value="2ec9ff" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -62,17 +63,12 @@
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
                                       <entry key="backgroundColor" value="ffffff" />
-                                      <entry key="foregroundImage" value="$USER_HOME$/Music/exam.png" />
+                                      <entry key="foregroundImage" value="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_action_app_icon.png" />
                                     </map>
                                   </option>
                                 </PersistentState>
                               </value>
                             </entry>
-                          </map>
-                        </option>
-                        <option name="values">
-                          <map>
-                            <entry key="outputIconType" value="ACTIONBAR" />
                           </map>
                         </option>
                       </PersistentState>

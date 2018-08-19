@@ -1,6 +1,7 @@
 package org.aplusstudios.com.biologytrivia.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -9,10 +10,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import org.aplusstudios.com.biologytrivia.MainActivity;
+import org.aplusstudios.com.biologytrivia.QuestionActivity;
 import org.aplusstudios.com.biologytrivia.R;
+import org.aplusstudios.com.biologytrivia.model.Answer;
 import org.aplusstudios.com.biologytrivia.model.Level;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class LevelsRecyclerViewAdapter extends RecyclerView.Adapter<LevelsRecyclerViewAdapter.LessonViewHolder> {
@@ -52,6 +58,21 @@ public class LevelsRecyclerViewAdapter extends RecyclerView.Adapter<LevelsRecycl
             lessonsViewHolder.levelImageView.setBackgroundColor(context.getResources().getColor(R.color.light_gray));
             lessonsViewHolder.levelImageView.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_action_label_not_started));
         }
+
+        lessonsViewHolder.cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Level level = levelList.get(position);
+                Intent openLevelIntent = new Intent(context,QuestionActivity.class);
+                openLevelIntent.putExtra("level_name", level.getLevelTitle());
+                openLevelIntent.putExtra("level_id", level.getNumber());
+                openLevelIntent.putExtra("question_number",1);
+                openLevelIntent.putExtra("score_count",0);
+                openLevelIntent.putExtra("total_questions_count",30);
+                context.startActivity(openLevelIntent);
+            }
+        });
+
     }
 
     @Override
@@ -65,17 +86,15 @@ public class LevelsRecyclerViewAdapter extends RecyclerView.Adapter<LevelsRecycl
         final TextView levelTitleTextView;
         final ImageView levelCompleteStatusImageView;
         final ImageView levelImageView;
-//        final TextView cardDescription;
 
         LessonViewHolder(View itemView) {
 
             super(itemView);
-//
+
             cardView = itemView.findViewById(R.id.level_title_cardview);
             levelTitleTextView = itemView.findViewById(R.id.level_name_textview);
             levelCompleteStatusImageView = itemView.findViewById(R.id.level_complete_status);
             levelImageView = itemView.findViewById(R.id.level_image_view);
-//            cardDescription = itemView.findViewById(R.id.card_title_description);
         }
     }
 }

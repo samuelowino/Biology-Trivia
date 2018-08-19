@@ -30,13 +30,13 @@
     <string name="general_company_name">A Plus Apps</string>
     <string name="general_home">Home</string>
     <string name="sample_question_number">5/10</string>
-    <string name="sample_timer_display">00:27</string>
+    <string name="sample_timer_display">00:00</string>
     <string name="sample_question">Which country is this landmark located in ?</string>
     <string name="sample_level_title">Level 1</string>
     <string name="general_question">question</string>
     <string name="general_error_unable_to_load_question">Unable to load question as this time.</string>
     <string name="sample_answer_a">Choose this answer</string>
     <string name="sample_answer_b">OR choose this answer</string>
-    <string name="sample_c">OR this answer</string>
+    <string name="sample_answer_c">OR this answer</string>
     <string name="sample_answer_d">OR all these answers</string>
 </resources>
