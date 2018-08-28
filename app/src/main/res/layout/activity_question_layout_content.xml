@@ -25,10 +25,10 @@
             android:layout_height="wrap_content" />
 
         <ImageView
-            android:id="@+id/unlock_question_button"
-            android:src="@drawable/ic_action_move_next_level"
+            android:id="@+id/exit_game_playButton"
+            android:src="@drawable/ic_action_exit_game_play"
             android:contentDescription="@string/general_unlock_question"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="12dp"
             android:layout_marginEnd="12dp"
             android:layout_alignParentEnd="true"
             android:layout_width="wrap_content"
@@ -55,7 +55,7 @@
             android:layout_height="100dp" />
 
         <ImageView
-            android:id="@+id/next_level_imageview"
+            android:id="@+id/unlock_question_button"
             android:src="@drawable/ic_action_unlock_answer"
             android:layout_marginEnd="8dp"
             android:layout_alignParentEnd="true"
@@ -66,7 +66,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:layout_below="@+id/next_level_imageview"
+            android:layout_below="@+id/unlock_question_button"
             android:text="@string/general_unlock"
             android:layout_marginEnd="4dp"
             android:textColor="@android:color/holo_blue_light" />

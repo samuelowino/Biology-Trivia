@@ -42,11 +42,10 @@
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_marginStart="46dp"
-                    android:layout_marginLeft="16dp"
                     android:layout_marginTop="6dp"
                     android:clickable="true"
                     android:focusable="true"
-                    android:src="@drawable/ic_action_avatart_a"
+                    android:src="@drawable/avatar_b"
                     app:border_color="@color/colorAccent"
                     app:border_width="0dp"
                     app:paddingStart="6dp" />
@@ -67,12 +66,11 @@
                     android:layout_width="160dp"
                     android:progress="50"
                     android:max="100"
-                    android:minHeight="20dp"
                     android:layout_marginStart="8dp"
                     android:progressBackgroundTint="@android:color/black"
                     android:layout_height="wrap_content"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginBottom="44dp" />
+                    android:layout_marginBottom="4dp" />
 
                 <ImageView
                     android:id="@+id/reward_video_image_view"

@@ -47,7 +47,7 @@
                     android:layout_marginTop="6dp"
                     android:clickable="true"
                     android:focusable="true"
-                    android:src="@drawable/ic_action_avatart_a"
+                    android:src="@drawable/avatar_b"
                     app:border_color="@color/colorAccent"
                     app:border_width="0dp"
                     app:paddingStart="6dp" />

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import org.aplusstudios.com.biologytrivia.model.Question;
@@ -29,6 +30,8 @@ public class QuestionActivity extends AppCompatActivity {
 
     String correctAnswer = "";
 
+    ImageView cancelGamePlayButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +43,7 @@ public class QuestionActivity extends AppCompatActivity {
         answerOptionBButton = findViewById(R.id.answer_option_B_button);
         answerOptionCButton = findViewById(R.id.answer_option_C_button);
         answerOptionDButton = findViewById(R.id.answer_option_D_button);
+        cancelGamePlayButton = findViewById(R.id.exit_game_playButton);
 
         Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
@@ -56,6 +60,13 @@ public class QuestionActivity extends AppCompatActivity {
 
         questionNumberProgressTextView.setText((questionNumber) + "/" + totalQuestionInLevel);
 
+        cancelGamePlayButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent exitIntent = new Intent(QuestionActivity.this,MainActivity.class);
+                startActivity(exitIntent);
+            }
+        });
 
         answerOptionAButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,19 +88,6 @@ public class QuestionActivity extends AppCompatActivity {
                     }
                 } else {
                     answerOptionAButton.setBackgroundColor(getResources().getColor(android.R.color.holo_red_dark));
-
-                    if (questionNumber == totalQuestionInLevel) {
-                        Intent intent = new Intent(QuestionActivity.this, GamePlayScoreActivity.class);
-                        startActivity(intent);
-                    } else {
-                        Intent openLevelIntent = new Intent(QuestionActivity.this, QuestionActivity.class);
-                        openLevelIntent.putExtra("level_name", levelName);
-                        openLevelIntent.putExtra("level_id", level_id);
-                        openLevelIntent.putExtra("question_number", questionNumber);
-                        openLevelIntent.putExtra("score_count", scoreCount + 1);
-                        openLevelIntent.putExtra("total_questions_count", totalQuestionInLevel);
-                        startActivity(openLevelIntent);
-                    }
                 }
             }
         });
@@ -104,7 +102,6 @@ public class QuestionActivity extends AppCompatActivity {
                         Intent intent = new Intent(QuestionActivity.this, GamePlayScoreActivity.class);
                         startActivity(intent);
                     } else {
-
                         Intent openLevelIntent = new Intent(QuestionActivity.this, QuestionActivity.class);
                         openLevelIntent.putExtra("level_name", levelName);
                         openLevelIntent.putExtra("level_id", level_id);
@@ -115,19 +112,6 @@ public class QuestionActivity extends AppCompatActivity {
                     }
                 } else {
                     answerOptionBButton.setBackgroundColor(getResources().getColor(android.R.color.holo_red_dark));
-
-                    if (questionNumber == totalQuestionInLevel) {
-                        Intent intent = new Intent(QuestionActivity.this, GamePlayScoreActivity.class);
-                        startActivity(intent);
-                    } else {
-                        Intent openLevelIntent = new Intent(QuestionActivity.this, QuestionActivity.class);
-                        openLevelIntent.putExtra("level_name", levelName);
-                        openLevelIntent.putExtra("level_id", level_id);
-                        openLevelIntent.putExtra("question_number", questionNumber);
-                        openLevelIntent.putExtra("score_count", scoreCount);
-                        openLevelIntent.putExtra("total_questions_count", totalQuestionInLevel);
-                        startActivity(openLevelIntent);
-                    }
                 }
             }
         });
@@ -153,19 +137,6 @@ public class QuestionActivity extends AppCompatActivity {
                     }
                 } else {
                     answerOptionCButton.setBackgroundColor(getResources().getColor(android.R.color.holo_red_dark));
-
-                    if (questionNumber == totalQuestionInLevel) {
-                        Intent intent = new Intent(QuestionActivity.this, GamePlayScoreActivity.class);
-                        startActivity(intent);
-                    } else {
-                        Intent openLevelIntent = new Intent(QuestionActivity.this, QuestionActivity.class);
-                        openLevelIntent.putExtra("level_name", levelName);
-                        openLevelIntent.putExtra("level_id", level_id);
-                        openLevelIntent.putExtra("question_number", questionNumber);
-                        openLevelIntent.putExtra("score_count", scoreCount);
-                        openLevelIntent.putExtra("total_questions_count", totalQuestionInLevel);
-                        startActivity(openLevelIntent);
-                    }
                 }
             }
         });
@@ -190,19 +161,6 @@ public class QuestionActivity extends AppCompatActivity {
                     }
                 } else {
                     answerOptionDButton.setBackgroundColor(getResources().getColor(android.R.color.holo_red_dark));
-
-                    if (questionNumber == totalQuestionInLevel) {
-                        Intent intent = new Intent(QuestionActivity.this, GamePlayScoreActivity.class);
-                        startActivity(intent);
-                    } else {
-                        Intent openLevelIntent = new Intent(QuestionActivity.this, QuestionActivity.class);
-                        openLevelIntent.putExtra("level_name", levelName);
-                        openLevelIntent.putExtra("level_id", level_id);
-                        openLevelIntent.putExtra("question_number", questionNumber);
-                        openLevelIntent.putExtra("score_count", scoreCount);
-                        openLevelIntent.putExtra("total_questions_count", totalQuestionInLevel);
-                        startActivity(openLevelIntent);
-                    }
                 }
             }
         });
