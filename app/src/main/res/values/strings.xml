@@ -20,7 +20,7 @@
 
     <!-- sample text -->
     <string name="level1">Introduction</string>
-    <string name="level2">Cell Biology</string>
+    <string name="level2">Genetics</string>
 
     <!-- ============================================================================================================================ -->
 
@@ -106,10 +106,69 @@
     <!-- ============================================================================================================================ -->
 
     <!-- Level 2 QUESTIONS -->
-    <string name="level_two_question_one">Which is cytology?</string>
-
+    <string name="level_two_question_one">Proteins destined to be secreted move through the secretory pathway in which of the following orders ?</string>
+    <string name="level_two_question_two">Stabilization of the unique coiled structure of an alpha helix in a protein is primarily attributed to</string>
+    <string name="level_two_question_three">A DNA strand with the sequence 5\' CGA TTG 3\' would be complementary to the sequence </string>
+    <string name="level_two_question_four">A cell nucleus contains of the following ?</string>
+    <string name="level_two_question_five">Which of the following best explains how mutations in DNA can result in the expression of new phenotype ?</string>
+    <string name="level_two_question_six">Which of the following techniques could be used to demonstrate protein binding to specific DNA sequences ?</string>
+    <string name="level_two_question_seven">Which of the following best explains why enzymes are effective in facilitating chemical reactions ?</string>
+    <string name="level_two_question_eight">Targeting of newly synthesized proteins is most likely to require two different signal peptides for which of the following destinations ?</string>
+    <string name="level_two_question_nine">Approximately what fraction of the human genome encodes proteins ?</string>
+    <string name="level_two_question_ten">Which of the following contains DNA sequences required for the segregation of chromosomes in mitosis and meiosis ?</string>
 
     <!-- Level 2 OPTIONS -->
+
+    <string name="level_two_question_one_option_one">Smooth ER -> Golgi transport vesicle -> Golgi cistenae -> secretory vesicle -> cell surface</string>
+    <string name="level_two_question_one_option_two">Rough ER -> Golgi tranport vesicle -> Golgi cisternae -> secretory vesicle -> cell surface</string>
+    <string name="level_two_question_one_option_three">Golgi cisternae -> ER transport vesicle -> smooth ER -> secretory vesicle -> cell surface</string>
+    <string name="level_two_question_one_option_four">Rough ER -> smooth ER -> Golgi transport vesicle -> Golgi cisternae -> secretory vesicle -> cell surface</string>
+
+    <string name="level_two_question_two_option_one">hydrogen bonding between the peptide backbone atoms</string>
+    <string name="level_two_question_two_option_two">disulfide bridges between cysteine side cahins</string>
+    <string name="level_two_question_two_option_three">carbohydrate moieties between cyteine side cahins</string>
+    <string name="level_two_question_two_option_four">peptide linkage that covalent bond amino acids</string>
+
+    <string name="level_two_question_three_option_one">hydrogen bonding between the peptide backbone atoms</string>
+    <string name="level_two_question_three_option_two">disulfide bridges between cysteine side cahins</string>
+    <string name="level_two_question_three_option_three">carbohydrate moieties between cyteine side cahins</string>
+    <string name="level_two_question_three_option_four">peptide linkage that covalent bond amino acids</string>
+
+    <string name="level_two_question_four_option_one">DNA only</string>
+    <string name="level_two_question_four_option_two">Protein only</string>
+    <string name="level_two_question_four_option_three">RNA only</string>
+    <string name="level_two_question_four_option_four">DNA, Protein and RNA</string>
+
+    <string name="level_two_question_five_option_one">A different polypeptide is produced.</string>
+    <string name="level_two_question_five_option_two">The polarity of tRNA becomes the opposte of that of DNA</string>
+    <string name="level_two_question_five_option_three">Nucleic acids are methylated.</string>
+    <string name="level_two_question_five_option_four">Eukaryotes and prokaryotes have similar ribosomes.</string>
+
+    <string name="level_two_question_six_option_one">Western blot hybridization</string>
+    <string name="level_two_question_six_option_two">Northern blot hybridization</string>
+    <string name="level_two_question_six_option_three">Southern blot hybridation</string>
+    <string name="level_two_question_six_option_four">Electrophoretic mobility shift assay</string>
+
+    <string name="level_two_question_seven_option_one">They raise the temperature of the reaction mixture, thereby speeding up the conversion of reactants to products.</string>
+    <string name="level_two_question_seven_option_two">They alter the equilibrium constant of a reaction(<i><b>K<sub>aq</sub></b></i></string>
+    <string name="level_two_question_seven_option_three">They increase the maximal rate of the chemical reaction (<b><i>V</i><sub>eq</sub></b>)</string>
+    <string name="level_two_question_seven_option_four">They lower the activation energy, thereby speeding up the conversion of reactants to products.</string>
+
+    <string name="level_two_question_eight_option_one">Plasma membrane</string>
+    <string name="level_two_question_eight_option_two">Lysosome</string>
+    <string name="level_two_question_eight_option_three">Cytosol</string>
+    <string name="level_two_question_eight_option_four">Chloroplast</string>
+
+    <string name="level_two_question_nine_option_one">2%%</string>
+    <string name="level_two_question_nine_option_two">25%%</string>
+    <string name="level_two_question_nine_option_three">50%%</string>
+    <string name="level_two_question_nine_option_four">90%%</string> <!-- 99% -->
+
+    <string name="level_two_question_ten_option_one">Telomeres</string>
+    <string name="level_two_question_ten_option_two">Centromeres</string>
+    <string name="level_two_question_ten_option_three">Nucleosomes</string>
+    <string name="level_two_question_ten_option_four">Spliceosomes</string> <!-- Ribosomes -->
+
 
     <!-- Level 2 CORRECT ANSWERS -->
 
@@ -117,9 +176,26 @@
 
 
     <!-- Level 3 QUESTIONS -->
-    <string name="level_three_question_one">What composes 70% of water?</string>
+    <string name="level_three_question_one">Which of the following sets of reactions occurs in the stroma of the chloroplast in plant cells ?</string>
+    <string name="level_three_question_two">Which of the following is typically NOT found in normal sematic cells of a human male ?</string>
+    <string name="level_three_question_three">Which of the following most accurately describes a retrotransposon ?</string>
 
     <!-- Level 3 OPTIONS -->
+
+    <string name="level_three_question_one_option_one">Calvin cycle</string>
+    <string name="level_three_question_one_option_two">Krebs cycle</string>
+    <string name="level_three_question_one_option_three">Fermentation</string>
+    <string name="level_three_question_one_option_four">Decarboxylation</string>
+
+    <string name="level_three_question_two_option_one">The entire genetic information possessed by the origin zygote</string>
+    <string name="level_three_question_two_option_two">An inactivated X chromosome</string>
+    <string name="level_three_question_two_option_three">Forty-four autosome</string>
+    <string name="level_three_question_two_option_four">A diploid nucleus</string> <!-- A Y chromosome -->
+
+    <string name="level_three_question_three_option_one">A DNA sequences that can move from one site in the genome to another without replicating</string>
+    <string name="level_three_question_three_option_two">A DNA sequence that can be deleted from the genome without consequence</string>
+    <string name="level_three_question_three_option_three">A DNA sequence that replicates via a protein intermediate</string>
+    <string name="level_three_question_three_option_four">A DNA sequence that replicates via an RNA intermediate</string> <!-- A DNA sequence that causes base-substitution mutation at some other site on the chromosome -->
 
     <!-- Level 3 CORRECT ANSWERS -->
 
