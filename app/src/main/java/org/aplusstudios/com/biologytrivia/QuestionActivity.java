@@ -5,10 +5,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import org.aplusstudios.com.biologytrivia.custom.PausePlayDialog;
 import org.aplusstudios.com.biologytrivia.model.Question;
 
 public class QuestionActivity extends AppCompatActivity {
@@ -30,7 +33,7 @@ public class QuestionActivity extends AppCompatActivity {
 
     String correctAnswer = "";
 
-    ImageView cancelGamePlayButton;
+    ImageView pauseGamePlayButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +46,7 @@ public class QuestionActivity extends AppCompatActivity {
         answerOptionBButton = findViewById(R.id.answer_option_B_button);
         answerOptionCButton = findViewById(R.id.answer_option_C_button);
         answerOptionDButton = findViewById(R.id.answer_option_D_button);
-        cancelGamePlayButton = findViewById(R.id.exit_game_playButton);
+        pauseGamePlayButton = findViewById(R.id.pause_game_play_button);
 
         Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
@@ -60,11 +63,12 @@ public class QuestionActivity extends AppCompatActivity {
 
         questionNumberProgressTextView.setText((questionNumber) + "/" + totalQuestionInLevel);
 
-        cancelGamePlayButton.setOnClickListener(new View.OnClickListener() {
+        pauseGamePlayButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent exitIntent = new Intent(QuestionActivity.this,MainActivity.class);
-                startActivity(exitIntent);
+                PausePlayDialog pausePlayDialog = new PausePlayDialog(QuestionActivity.this);
+                pausePlayDialog.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE);
+                pausePlayDialog.show();
             }
         });
 

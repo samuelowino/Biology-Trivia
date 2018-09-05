@@ -25,8 +25,8 @@
             android:layout_height="wrap_content" />
 
         <ImageView
-            android:id="@+id/exit_game_playButton"
-            android:src="@drawable/ic_action_exit_game_play"
+            android:id="@+id/pause_game_play_button"
+            android:src="@drawable/ic_action_pause_game_play"
             android:contentDescription="@string/general_unlock_question"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="12dp"

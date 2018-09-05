@@ -260,6 +260,9 @@
 
     <!-- Level 10 QUESTIONS -->
     <string name="level_ten_question_one">Which of the following is true?</string>
+    <string name="general_pause_dialog_message_text">Cross the finish line first !</string>
+    <string name="general_pause_negative_response">Give up</string>
+    <string name="general_positive_pause_response">Resume</string>
 
     <!-- Level 10 OPTIONS -->
 

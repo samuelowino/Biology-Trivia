@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pause_game_play_dialog_layout"
+    android:layout_width="match_parent"
+    android:layout_margin="12dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/pause_dialog_message_textview"
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/black"
+        android:textSize="21sp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text="@string/general_pause_dialog_message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/give_up_game_play_button"
+        android:layout_margin="6dp"
+        android:textSize="21sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/pause_dialog_message_textview"
+        android:background="@android:color/white"
+        android:text="@string/general_pause_negative_response"
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/resume_game_play_button"
+        android:layout_margin="6dp"
+        android:textSize="21sp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/pause_dialog_message_textview"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/white"
+        android:text="@string/general_positive_pause_response"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
