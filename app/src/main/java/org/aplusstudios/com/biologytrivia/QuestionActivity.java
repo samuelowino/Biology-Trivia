@@ -1,6 +1,8 @@
 package org.aplusstudios.com.biologytrivia;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.CountDownTimer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -19,17 +21,21 @@ public class QuestionActivity extends AppCompatActivity {
     private Question question;
     private TextView questionNumberProgressTextView;
     private TextView questionPromptTextView;
+    private TextView questionTimerTextView;
 
     Integer questionNumber = 0;
     String levelName = "unknown level";
     Integer level_id = 0;
     Integer totalQuestionInLevel = 0;
     Integer scoreCount = 0;
+    long timeLeft = 70000;
 
     Button answerOptionAButton;
     Button answerOptionBButton;
     Button answerOptionCButton;
     Button answerOptionDButton;
+
+    CountDownTimer countDownTimer;
 
     String correctAnswer = "";
 
@@ -48,6 +54,9 @@ public class QuestionActivity extends AppCompatActivity {
         answerOptionDButton = findViewById(R.id.answer_option_D_button);
         pauseGamePlayButton = findViewById(R.id.pause_game_play_button);
 
+        questionTimerTextView = findViewById(R.id.question_timer_n);
+        questionTimerTextView.setText("");
+
         Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
             questionNumber = (Integer) bundle.get("question_number");
@@ -63,12 +72,34 @@ public class QuestionActivity extends AppCompatActivity {
 
         questionNumberProgressTextView.setText((questionNumber) + "/" + totalQuestionInLevel);
 
+        countDownTimer = new CountDownTimer(timeLeft,1000) {
+            @Override
+            public void onTick(long millisUntilFinished) {
+                timeLeft = millisUntilFinished;
+                updateTime();
+            }
+
+            @Override
+            public void onFinish() {
+
+            }
+        }.start();
+
         pauseGamePlayButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                PausePlayDialog pausePlayDialog = new PausePlayDialog(QuestionActivity.this);
+                countDownTimer.cancel();
+                PausePlayDialog pausePlayDialog = new PausePlayDialog(QuestionActivity.this,countDownTimer);
                 pausePlayDialog.getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE);
                 pausePlayDialog.show();
+                pausePlayDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
+                    @Override
+                    public void onCancel(DialogInterface dialog) {
+                        countDownTimer.start();
+                    }
+                });
+
+
             }
         });
 
@@ -196,6 +227,24 @@ public class QuestionActivity extends AppCompatActivity {
             case 10:
                 break;
         }
+    }
+
+    public void stopTimer(){
+        countDownTimer.cancel();
+        questionTimerTextView.setText("00:00");
+    }
+
+    private void updateTime() {
+        int minutes = (int) timeLeft / 60000;
+        int seconds = (int) timeLeft % 60000 / 1000;
+
+        String timeLeftText = "";
+        timeLeftText = ""+minutes;
+        timeLeftText += ":";
+        if (seconds<10) timeLeftText += "0";
+        timeLeftText += seconds;
+
+        questionTimerTextView.setText(timeLeftText);
     }
 
     public void setUpLeveOneQuestions() {

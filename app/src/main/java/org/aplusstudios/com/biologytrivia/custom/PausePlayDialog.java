@@ -4,6 +4,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.support.annotation.NonNull;
 import android.view.View;
 import android.view.Window;
@@ -18,10 +19,12 @@ public class PausePlayDialog extends Dialog {
     private Context context;
     private Button cancelGamePlayButton;
     private Button resumeGamePlayButton;
+    private CountDownTimer countDownTimer;
 
-    public PausePlayDialog(@NonNull Context context) {
+    public PausePlayDialog(@NonNull Context context, CountDownTimer countDownTimer) {
         super(context);
         this.context = context;
+        this.countDownTimer = countDownTimer;
     }
 
     @Override
@@ -38,6 +41,7 @@ public class PausePlayDialog extends Dialog {
             public void onClick(View v) {
                 Intent exitIntent = new Intent(context, MainActivity.class);
                 context.startActivity(exitIntent);
+                countDownTimer.cancel();
             }
         });
 
