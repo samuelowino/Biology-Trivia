@@ -10,3 +10,4 @@ Trivia is actually pretty damn fun.
 Trivia is unimportant facts or details that are considered to be amusing rather than serious or useful.
 
 A trivia game or competition is one where the competitors are asked questions about interesting but unimportant facts in many subjects.
+
