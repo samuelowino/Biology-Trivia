@@ -7,3 +7,6 @@ By playing trivia, not only will you learn a bunch of random stuff you’ll prob
 Enhanced memory, improved cognition, and brain performance under pressure aside, you’ll considerably reduce your stress levels.
 
 Trivia is actually pretty damn fun.
+Trivia is unimportant facts or details that are considered to be amusing rather than serious or useful.
+
+A trivia game or competition is one where the competitors are asked questions about interesting but unimportant facts in many subjects.
