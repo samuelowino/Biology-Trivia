@@ -262,12 +262,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         switch (item.getItemId()) {
             case R.id.profile_menu:
-                List<Answer> answerList = new ArrayList<>();
-                Answer answer = new Answer("This is an answer", 1, 1, false);
-                Intent intent = new Intent(MainActivity.this, QuestionActivity.class);
-                intent.putExtra("question_text", "This is a question");
-                intent.putExtra("question_id", "1");
-                startActivity(intent);
                 break;
         }
 

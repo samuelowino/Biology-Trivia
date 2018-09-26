@@ -12,6 +12,16 @@
         <item name="android:buttonStyle">@style/RobotoButtonStyle</item>
     </style>
 
+    <style name="PrimaryMaterialButton" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/yellow_answer_button</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
+
+    <style name="PrimaryMaterialButtonBlue" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/success_blue</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+    </style>
+
     <style name="GreenToolbarTheme" parent="Theme.AppCompat">
         <item name="android:textColor">@color/colorPrimaryDark</item>
         <item name = "android:textColorSecondary">@color/colorPrimaryDark</item>

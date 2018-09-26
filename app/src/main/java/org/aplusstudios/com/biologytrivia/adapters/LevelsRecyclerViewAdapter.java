@@ -72,6 +72,7 @@ public class LevelsRecyclerViewAdapter extends RecyclerView.Adapter<LevelsRecycl
                         openLevelIntent.putExtra("question_number", 0);
                         openLevelIntent.putExtra("score_count", 0);
                         openLevelIntent.putExtra("total_questions_count", questionsNumber);
+                        openLevelIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         context.startActivity(openLevelIntent);
                         break;
                     case 2:
@@ -83,6 +84,8 @@ public class LevelsRecyclerViewAdapter extends RecyclerView.Adapter<LevelsRecycl
                         openLevelIntent.putExtra("question_number", 0);
                         openLevelIntent.putExtra("score_count", 0);
                         openLevelIntent.putExtra("total_questions_count", questionsNumber);
+                        openLevelIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
                         context.startActivity(openLevelIntent);
                         break;
                     case 3:
@@ -94,6 +97,7 @@ public class LevelsRecyclerViewAdapter extends RecyclerView.Adapter<LevelsRecycl
                         openLevelIntent.putExtra("question_number", 0);
                         openLevelIntent.putExtra("score_count", 0);
                         openLevelIntent.putExtra("total_questions_count", questionsNumber);
+                        openLevelIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         context.startActivity(openLevelIntent);
                         break;
                     case 4:
@@ -105,6 +109,8 @@ public class LevelsRecyclerViewAdapter extends RecyclerView.Adapter<LevelsRecycl
                         openLevelIntent.putExtra("question_number", 0);
                         openLevelIntent.putExtra("score_count", 0);
                         openLevelIntent.putExtra("total_questions_count", questionsNumber);
+                        openLevelIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
                         context.startActivity(openLevelIntent);
                         break;
                     case 5:
@@ -116,6 +122,8 @@ public class LevelsRecyclerViewAdapter extends RecyclerView.Adapter<LevelsRecycl
                         openLevelIntent.putExtra("question_number", 0);
                         openLevelIntent.putExtra("score_count", 0);
                         openLevelIntent.putExtra("total_questions_count", questionsNumber);
+                        openLevelIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
                         context.startActivity(openLevelIntent);
                         break;
                     case 6:
@@ -127,6 +135,8 @@ public class LevelsRecyclerViewAdapter extends RecyclerView.Adapter<LevelsRecycl
                         openLevelIntent.putExtra("question_number", 0);
                         openLevelIntent.putExtra("score_count", 0);
                         openLevelIntent.putExtra("total_questions_count", questionsNumber);
+                        openLevelIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
                         context.startActivity(openLevelIntent);
                         break;
                     case 7:
@@ -138,6 +148,8 @@ public class LevelsRecyclerViewAdapter extends RecyclerView.Adapter<LevelsRecycl
                         openLevelIntent.putExtra("question_number", 0);
                         openLevelIntent.putExtra("score_count", 0);
                         openLevelIntent.putExtra("total_questions_count", questionsNumber);
+                        openLevelIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
                         context.startActivity(openLevelIntent);
                         break;
                     case 8:
@@ -149,6 +161,8 @@ public class LevelsRecyclerViewAdapter extends RecyclerView.Adapter<LevelsRecycl
                         openLevelIntent.putExtra("question_number", 0);
                         openLevelIntent.putExtra("score_count", 0);
                         openLevelIntent.putExtra("total_questions_count", questionsNumber);
+                        openLevelIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
                         context.startActivity(openLevelIntent);
                         break;
                     case 9:
@@ -160,6 +174,8 @@ public class LevelsRecyclerViewAdapter extends RecyclerView.Adapter<LevelsRecycl
                         openLevelIntent.putExtra("question_number", 0);
                         openLevelIntent.putExtra("score_count", 0);
                         openLevelIntent.putExtra("total_questions_count", questionsNumber);
+                        openLevelIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
                         context.startActivity(openLevelIntent);
                         break;
                     case 10:
@@ -171,6 +187,8 @@ public class LevelsRecyclerViewAdapter extends RecyclerView.Adapter<LevelsRecycl
                         openLevelIntent.putExtra("question_number", 0);
                         openLevelIntent.putExtra("score_count", 0);
                         openLevelIntent.putExtra("total_questions_count", questionsNumber);
+                        openLevelIntent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+
                         context.startActivity(openLevelIntent);
                         break;
                     default:

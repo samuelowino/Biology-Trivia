@@ -106,7 +106,7 @@
     <Button
         android:id="@+id/answer_option_A_button"
         android:textColor="@android:color/white"
-        android:background="@color/yellow_answer_button"
+        android:theme="@style/PrimaryMaterialButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -116,7 +116,7 @@
     <Button
         android:id="@+id/answer_option_B_button"
         android:textColor="@android:color/white"
-        android:background="@color/yellow_answer_button"
+        android:theme="@style/PrimaryMaterialButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -126,7 +126,7 @@
     <Button
         android:id="@+id/answer_option_C_button"
         android:textColor="@android:color/white"
-        android:background="@color/yellow_answer_button"
+        android:theme="@style/PrimaryMaterialButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -137,7 +137,7 @@
     <Button
         android:id="@+id/answer_option_D_button"
         android:textColor="@android:color/white"
-        android:background="@color/yellow_answer_button"
+        android:theme="@style/PrimaryMaterialButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
