@@ -25,7 +25,7 @@
     <!-- ============================================================================================================================ -->
 
     <!-- General text -->
-    <string name="general_get_free_coins">click to get free coins</string>
+    <string name="general_get_free_coins">Get free keys</string>
     <string name="general_your_remaing_coins">Your remaining coins</string>
     <string name="general_your_available_keys">Your available keys</string>
     <string name="general_unlock_question">unlock_question</string>

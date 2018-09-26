@@ -115,10 +115,10 @@
 
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView_game_play_score_activity"
-        ads:adSize="BANNER"
+        ads:adSize="LARGE_BANNER"
         android:layout_alignParentBottom="true"
         android:background="@android:color/white"
-        ads:adUnitId="ca-app-pub-5160269550159038/3393743277"
+        ads:adUnitId="ca-app-pub-5160269550159038/6854642377"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 

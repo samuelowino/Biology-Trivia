@@ -17,24 +17,6 @@
     </item>
 
     <item
-        android:id="@+id/achievements_menu"
-        android:checkable="true"
-        android:icon="@drawable/ic_action_tem"
-        android:title="@string/general_achievements" />
-
-    <item
-        android:id="@+id/learn_menu"
-        android:checkable="true"
-        android:icon="@drawable/ic_action_learn"
-        android:title="@string/general_learn" />
-
-    <item
-        android:id="@+id/settins_menu"
-        android:checkable="true"
-        android:icon="@drawable/ic_action_settings"
-        android:title="@string/general_settings" />
-
-    <item
         android:id="@+id/help_feedback_menu"
         android:checkable="true"
         android:icon="@drawable/ic_action_help"

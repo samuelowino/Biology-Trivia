@@ -89,12 +89,12 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginStart="8dp"
                     android:layout_marginTop="16dp"
-                    android:text="@string/general_get_free_coins_text" />
+                    android:text="@string/general_get_free_coins" />
 
 
                 <TextView
                     android:id="@+id/number_coins_textview"
-                    android:text="@string/sample_number_of_coins"
+                    android:text="@string/sample_number_of_keys"
                     android:layout_below="@+id/free_coins_textview"
                     android:layout_marginEnd="8dp"
                     android:layout_alignParentEnd="true"
@@ -106,6 +106,7 @@
                     android:id="@+id/availabel_coins_image_view"
                     android:layout_below="@+id/reward_video_image_view"
                     android:layout_marginTop="8dp"
+                    android:visibility="gone"
                     android:contentDescription="@string/general_your_remaing_coins"
                     android:layout_alignStart="@+id/reward_video_image_view"
                     android:src="@drawable/ic_action_coins"
@@ -115,6 +116,7 @@
                 <TextView
                     android:id="@+id/number_keys_textview"
                     android:text="@string/sample_number_of_keys"
+                    android:visibility="gone"
                     android:layout_below="@+id/number_coins_textview"
                     android:layout_marginEnd="8dp"
                     android:layout_alignParentEnd="true"
@@ -205,7 +207,7 @@
                     android:id="@+id/adView_main_activity"
                     ads:adSize="BANNER"
                     android:background="@android:color/white"
-                    ads:adUnitId="ca-app-pub-5160269550159038/3393743277"
+                    ads:adUnitId="ca-app-pub-5160269550159038/5342250150"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 

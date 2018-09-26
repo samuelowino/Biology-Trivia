@@ -17,6 +17,10 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.crashlytics.android.Crashlytics;
 import com.google.ads.mediation.admob.AdMobAdapter;
@@ -24,6 +28,9 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.reward.RewardItem;
+import com.google.android.gms.ads.reward.RewardedVideoAd;
+import com.google.android.gms.ads.reward.RewardedVideoAdListener;
 
 import org.aplusstudios.com.biologytrivia.adapters.LevelsRecyclerViewAdapter;
 import org.aplusstudios.com.biologytrivia.model.Answer;
@@ -42,6 +49,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private InterstitialAd mInterstitialAd;
     private GridLayoutManager gridLayoutManager;
     private Typeface typeface;
+    private RewardedVideoAd rewardedVideoAd;
+    private AdRequest adRequest;
+
+    private TextView free_coins_textview;
+    private ImageView free_coins_imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,19 +65,64 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         typeface = Typeface.createFromAsset(am,
                 String.format(Locale.US, "fonts/%s", "freedom.ttf"));
+        free_coins_imageView = findViewById(R.id.reward_video_image_view);
+        free_coins_textview = findViewById(R.id.free_coins_textview);
 
        // setTypeface(typeface);
 
 
         // Sample AdMob app ID: ca-app-pub-3940256099942544~3347511713
-        MobileAds.initialize(this, "ca-app-pub-5160269550159038~2362790683");
+        MobileAds.initialize(this, "ca-app-pub-5160269550159038~4440780762");
 
         Bundle extras = new Bundle();
         extras.putString("max_ad_content_rating", "PG");
 
-        AdRequest adRequest = new AdRequest.Builder()
+        adRequest = new AdRequest.Builder()
                 .addNetworkExtrasBundle(AdMobAdapter.class, extras)
                 .build();
+
+        rewardedVideoAd = MobileAds.getRewardedVideoAdInstance(this);
+        rewardedVideoAd.setRewardedVideoAdListener(new RewardedVideoAdListener() {
+            @Override
+            public void onRewardedVideoAdLoaded() {
+
+            }
+
+            @Override
+            public void onRewardedVideoAdOpened() {
+
+            }
+
+            @Override
+            public void onRewardedVideoStarted() {
+
+            }
+
+            @Override
+            public void onRewardedVideoAdClosed() {
+
+            }
+
+            @Override
+            public void onRewarded(RewardItem rewardItem) {
+
+            }
+
+            @Override
+            public void onRewardedVideoAdLeftApplication() {
+
+            }
+
+            @Override
+            public void onRewardedVideoAdFailedToLoad(int i) {
+
+            }
+
+            @Override
+            public void onRewardedVideoCompleted() {
+
+            }
+        });
 
 
         AdView adView = findViewById(R.id.adView_main_activity);
@@ -115,9 +172,69 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         LevelsRecyclerViewAdapter tracksRecyclerViewAdapter = new LevelsRecyclerViewAdapter(trackList,getApplicationContext());
         recyclerView.setAdapter(tracksRecyclerViewAdapter);
 
+        free_coins_imageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loadRewardedVideoAd();
+            }
+        });
 
+        free_coins_textview.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loadRewardedVideoAd();
+            }
+        });
 
         //  startActivity( new Intent(MainActivity.this,GoogleAuthActivity.class));
+    }
+
+    private void loadRewardedVideoAd() {
+
+        rewardedVideoAd.setRewardedVideoAdListener(new RewardedVideoAdListener() {
+            @Override
+            public void onRewarded(RewardItem reward) {
+
+                // Reward the user.
+            }
+
+            @Override
+            public void onRewardedVideoAdLeftApplication() {
+
+            }
+
+            @Override
+            public void onRewardedVideoAdClosed() {
+            }
+
+            @Override
+            public void onRewardedVideoAdFailedToLoad(int errorCode) {
+            }
+
+            @Override
+            public void onRewardedVideoAdLoaded() {
+
+                if (rewardedVideoAd.isLoaded()) {
+                    rewardedVideoAd.show();
+                }
+            }
+
+            @Override
+            public void onRewardedVideoAdOpened() {
+            }
+
+            @Override
+            public void onRewardedVideoStarted() {
+            }
+
+            @Override
+            public void onRewardedVideoCompleted() {
+            }
+        });
+
+        rewardedVideoAd.loadAd("ca-app-pub-3940256099942544/5224354917",
+                adRequest);
+
     }
 
     @Override

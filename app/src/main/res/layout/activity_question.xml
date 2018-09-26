@@ -82,8 +82,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@android:color/white"
-                    ads:adSize="BANNER"
-                    ads:adUnitId="ca-app-pub-5160269550159038/3393743277" />
+                    ads:adSize="LARGE_BANNER"
+                    ads:adUnitId="ca-app-pub-5160269550159038/2882063184" />
 
             </LinearLayout>
 
